@@ -1,8 +1,6 @@
 "use client";
 
 import TopicCard from "@/components/TopicCard";
-import { useEffect, useState } from "react";
-
 export default function Unit1() {
     return (
         <>
