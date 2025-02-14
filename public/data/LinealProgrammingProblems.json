@@ -1,0 +1,95 @@
+{
+    "problems": [
+        {
+            "question": "A una presentación escolar acuden 450 personas. El número de niños triplica al de madres, mientras que los padres solo suman la mitad que ellas.¿Cuántos padres, madres y niños asistieron?",
+            "solution": {
+                "mainFunction": "c = \\pm\\sqrt{a^2 + b^2}",
+                "restrictions": "c = \\pm\\sqrt{a^2 + b^2}"
+            }
+        },
+        {
+            "question": "Dos inversores adquieren acciones de dos empresas distintas. La compra de 'A' asciende a 2.000 euros, mientras que la inversión de 'B' es de 10.000 euros. Ambos obtienen el mismo beneficio, pero entonces 'B' tiene tres veces más dinero que su compañero.¿Qué cantidad ganaron?",
+            "solution": {
+                "mainFunction": "",
+                "restrictions": ""
+            }
+        },
+        {
+            "question": "Una herencia se distribuye de la siguiente manera: la mitad del dinero será para la esposa, un tercio para el hijo y la décima parte para una sobrina. Si además se reservan 20.000 euros para una obra benéfica, ¿a cuánto asciende la cantidad a repartir?",
+            "solution": {
+                "mainFunction": "",
+                "restrictions": ""
+            }
+        },
+        {
+            "question": "Un padre tiene 49 años y su hijo 11. ¿Cuántos años deben transcurrir para que el padre triplique la edad de su hijo?",
+            "solution": {
+                "mainFunction": "",
+                "restrictions": ""
+            }
+        },
+        {
+            "question": "Una fuente tiene 3 caños. El primero da 2.400 litros en 5 horas, el segundo 800 litros en 4 horas y el tercero 2.000 litros en 8 horas. Los tres juntos, ¿cuánto tiempo les toma verter 46.500 litros?",
+            "solution": {
+                "mainFunction": "",
+                "restrictions": ""
+            }
+        },
+        {
+            "question": "En un almacén hay 200 cajas conteniendo dos tipos de mercancía cuyo peso total es 10.800 kg. Las cajas de un tipo pesan 60 kg cada una, mientras que las del segundo tipo solo 45 kg. ¿Cuántas cajas hay de cada tipo?",
+            "solution": {
+                "mainFunction": "",
+                "restrictions": ""
+            }
+        },
+        {
+            "question": "Se quiere repartir equitativamente un número de bolas entre varias cajas. Si se introducen 50 en cada una, sobran 55, pero si se guardan 60, quedan faltando 5. ¿De cuántas cajas se dispone?",
+            "solution": {
+                "mainFunction": "",
+                "restrictions": ""
+            }
+        },
+        {
+            "question": "Un autobús que hace el recorrido Cali-Buga, ofrece asientos para fumadores al precio de 10.000 pesos y a no fumadores al precio de 6.000 pesos. Al no fumador se le deja llevar 50 kg de peso y al fumador 20 kg. Si el autobús tiene 90 asientos y admite un equipaje de hasta 3.000 kg. Además, debe considerarse que por políticas de la empresa, deben ofrecerse como mínimo 10 asientos para pasajeros no fumadores.",
+            "solution": {
+                "mainFunction": "",
+                "restrictions": ""
+            }
+        },
+        {
+            "question": "Un herrero con 80 kg de acero y 120 kg de aluminio quiere hacer bicicletas de paseo y de montaña que quiere vender, respectivamente, a 20.000 y 15.000 pesos cada una para sacar el máximo beneficio. Para la de paseo empleará 1 kg de acero y 3 kg de aluminio, y para la de montaña 2 kg de ambos metales.",
+            "solution": {
+                "mainFunction": "",
+                "restrictions": ""
+            }
+        },
+        {
+            "question": "Una compañía fabrica y vende dos modelos de lámpara L1 y L2. Para su fabricación se necesita un trabajo manual de 20 minutos para el modelo L1 y de 30 minutos para el L2; y un trabajo de máquina de 20 minutos para el modelo L1 y de 10 minutos para L2. Se dispone para el trabajo manual de 100 horas al mes y para la máquina 80 horas al mes. Sabiendo que el beneficio por unidad es de 15 y 10 euros para L1 y L2, respectivamente.",
+            "solution": {
+                "mainFunction": "",
+                "restrictions": ""
+            }
+        },
+        {
+            "question": "Se dispone de 600 g de un determinado fármaco para elaborar pastillas grandes y pequeñas. Las grandes pesan 40 g y las pequeñas 30 g. Se necesitan al menos tres pastillas grandes, y al menos el doble de pequeñas que de las grandes. Cada pastilla grande proporciona un beneficio de 2 € y la pequeña de 1 €. ¿Cuántas pastillas se han de elaborar de cada clase para que el beneficio sea máximo?",
+            "solution": {
+                "mainFunction": "",
+                "restrictions": ""
+            }
+        },
+        {
+            "question": "Con el comienzo del curso se va a lanzar unas ofertas de material escolar. Unos almacenes quieren ofrecer 600 cuadernos, 500 carpetas y 400 bolígrafos para la oferta, empaquetándolo de dos formas distintas: en el primer bloque pondrá 2 cuadernos, 1 carpeta y 2 bolígrafos; en el segundo, pondrán 3 cuadernos, 1 carpeta y 1 bolígrafo. Los precios de cada paquete serán 6.5 y 7 €, respectivamente. ¿Cuántos paquetes le conviene poner de cada tipo para obtener el máximo beneficio?",
+            "solution": {
+                "mainFunction": "",
+                "restrictions": ""
+            }
+        },
+        {
+            "question": "En una granja de pollos se da una dieta, para engordar, con una composición mínima de 15 unidades de una sustancia A y otras 15 de una sustancia B.\n\nEn el mercado solo se encuentran dos clases de compuestos: el tipo X con una composición de una unidad de A y 5 de B, y el otro tipo, Y, con una composición de cinco unidades de A y una de B. El precio del tipo X es de 10 euros y del tipo Y es de 30 €.",
+            "solution": {
+                "mainFunction": "",
+                "restrictions": ""
+            }
+        }
+    ]
+}
