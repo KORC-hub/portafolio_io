@@ -4,7 +4,7 @@ import TopicCard from "@/components/TopicCard";
 export default function Unit1() {
     return (
         <>
-            <section className="my-8 sm:my-10 grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-4 p-6">
+            <section className="sm:my-5 grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-4 px-6">
                 <TopicCard
                     title="Programacion Linear"
                     explain=""

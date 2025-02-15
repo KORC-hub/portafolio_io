@@ -5,12 +5,17 @@ interface Data {
     index: number;
     problem: {
         question: string;
+        numberVariables: number;
         solution: {
+            variables: string;
             mainFunction: string;
             restrictions: string;
+            procedure: string;
         };
+        result: string;
     };
 }
+
 export default function Card({ index, problem }: Data) {
     if (!problem) {
         return (
@@ -24,13 +29,23 @@ export default function Card({ index, problem }: Data) {
         );
     }
 
+    const variables = katex.renderToString(problem.solution.variables, {
+        throwOnError: false, // Evita errores si hay una sintaxis incorrecta
+        displayMode: false, // Modo bloque
+    });
+
     const mainFunction = katex.renderToString(problem.solution.mainFunction, {
         throwOnError: false, // Evita errores si hay una sintaxis incorrecta
-        displayMode: true, // Modo bloque
+        displayMode: false, // Modo bloque
     });
     const restrictions = katex.renderToString(problem.solution.restrictions, {
         throwOnError: false, // Evita errores si hay una sintaxis incorrecta
-        displayMode: true, // Modo bloque
+        displayMode: false, // Modo bloque
+    });
+
+    const procedure = katex.renderToString(problem.solution.procedure, {
+        throwOnError: false, // Evita errores si hay una sintaxis incorrecta
+        displayMode: false, // Modo bloque
     });
 
     return (
@@ -42,20 +57,45 @@ export default function Card({ index, problem }: Data) {
                         <h2 className="text-2xl mb-5">Pregunta:</h2>
                         <p className="text-lg mb-5 ml-5 question">{problem.question}</p>
                         <h2 className="text-2xl mb-5">Planteamiento:</h2>
-                        <div className="ml-5 text-lg">
-                            <p className="mb-5 border-b border-gray-400">Main function: </p>
+                        <div className="ml-5 mb-5 text-lg">
+                            <p className="mb-5 border-b border-gray-400">Variables: </p>
                             <p
-                                className="ml-4"
-                                dangerouslySetInnerHTML={{ __html: mainFunction }}
+                                className="ml-10"
+                                dangerouslySetInnerHTML={{ __html: variables }}
                             ></p>
                         </div>
-                        <div className="ml-5 text-lg">
-                            <p className="mb-5 border-b border-gray-400">Restrictions: </p>
-                            <p
-                                className="ml-4"
-                                dangerouslySetInnerHTML={{ __html: restrictions }}
-                            ></p>
-                        </div>
+                        {problem.numberVariables > 1 ? (
+                            <>
+                                <div className="ml-5 mb-5 text-lg ">
+                                    <p className="mb-5 border-b border-gray-400">Main function: </p>
+                                    <p
+                                        className="ml-10"
+                                        dangerouslySetInnerHTML={{ __html: mainFunction }}
+                                    ></p>
+                                </div>
+                                <div className="ml-5 mb-5 text-lg">
+                                    <p className="mb-5 border-b border-gray-400">Restrictions: </p>
+                                    <p
+                                        className="ml-10"
+                                        dangerouslySetInnerHTML={{ __html: restrictions }}
+                                    ></p>
+                                </div>
+                            </>
+                        ) : (
+                            <>
+                                <div className="ml-5 mb-5 text-lg">
+                                    <p className="mb-5 border-b border-gray-400">Procedimiento: </p>
+                                    <p
+                                        className="ml-10"
+                                        dangerouslySetInnerHTML={{ __html: procedure }}
+                                    ></p>
+                                </div>
+                                <div className="ml-5 mb-5 text-lg">
+                                    <p className="mb-5 border-b border-gray-400">Resultado: </p>
+                                    <p className="ml-10">{problem.result}</p>
+                                </div>
+                            </>
+                        )}
                     </div>
                 </div>
             </div>

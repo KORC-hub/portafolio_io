@@ -5,10 +5,14 @@ import Card from "./ProblemCard";
 
 interface Data {
     question: string;
+    numberVariables: number;
     solution: {
+        variables: string;
         mainFunction: string;
         restrictions: string;
+        procedure: string;
     };
+    result: string;
 }
 
 export default function Carousel({ problems }: { problems: Data[] }) {
@@ -44,14 +48,14 @@ export default function Carousel({ problems }: { problems: Data[] }) {
 
     return (
         <div className="flex mx-10">
-            <div className="flex justify-center items-center hover:text-blue-400">
-                <button className="m-4 p-4 text-6xl" onClick={previous}>
+            <div className="flex justify-center items-center ">
+                <button className=" h-full m-4 p-4 text-6xl hover:text-blue-400" onClick={previous}>
                     {"<"}
                 </button>
             </div>
             <Card index={selectIndex + 1} problem={selectProblem}></Card>
-            <div className="flex justify-center items-center hover:text-blue-400">
-                <button className="m-4 p-4 text-6xl" onClick={next}>
+            <div className="flex justify-center items-cente">
+                <button className="h-full m-4 p-4 text-6xl hover:text-blue-400" onClick={next}>
                     {">"}
                 </button>
             </div>
