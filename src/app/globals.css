@@ -18,6 +18,3 @@ body {
     color: var(--foreground);
     background: var(--background);
 }
-.question {
-    white-space: pre-line;
-}
