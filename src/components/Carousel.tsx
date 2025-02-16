@@ -1,23 +1,16 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Card from "./ProblemCard";
+import Card from "./cards/linealProgrammingCard";
+import { LinealProgrammingProblem } from "@/models/LinealProgrammingProblem";
 
-interface Data {
-    question: string;
-    numberVariables: number;
-    solution: {
-        variables: string;
-        mainFunction: string;
-        restrictions: string;
-        procedure: string;
-    };
-    result: string;
-}
+type Props = {
+    problems: LinealProgrammingProblem[];
+};
 
-export default function Carousel({ problems }: { problems: Data[] }) {
+export default function Carousel({ problems }: Props) {
     const [selectIndex, setSelectIndex] = useState(0);
-    const [selectProblem, setSelectProblem] = useState<Data>(problems[0]);
+    const [selectProblem, setSelectProblem] = useState<LinealProgrammingProblem>(problems[0]);
 
     useEffect(() => {
         if (problems.length > 0) {
@@ -25,7 +18,11 @@ export default function Carousel({ problems }: { problems: Data[] }) {
         }
     }, [problems]);
 
-    const selectNewQuestion = (index: number, problems: Data[], next = true) => {
+    const selectNewQuestion = (
+        index: number,
+        problems: LinealProgrammingProblem[],
+        next = true
+    ) => {
         const condition = next ? selectIndex < problems.length - 1 : selectIndex > 0;
         const nextIndex = next
             ? condition
@@ -53,7 +50,7 @@ export default function Carousel({ problems }: { problems: Data[] }) {
                     {"<"}
                 </button>
             </div>
-            <Card index={selectIndex + 1} problem={selectProblem}></Card>
+            <Card title={`Problema ${selectIndex + 1}`} problem={selectProblem}></Card>
             <div className="flex justify-center items-cente">
                 <button className="h-full m-4 p-4 text-6xl hover:text-blue-400" onClick={next}>
                     {">"}
