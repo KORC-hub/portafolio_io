@@ -2,7 +2,7 @@ import Link from "next/link";
 
 type Props = {
     title: string;
-    explain: string;
+    explain?: string;
     link: string;
 };
 
