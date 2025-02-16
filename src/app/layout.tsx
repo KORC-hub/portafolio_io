@@ -24,9 +24,9 @@ export default function RootLayout({
 }>) {
     const pathname = usePathname();
     return (
-        <html lang="en" className={`${handlee.className}`}>
+        <html lang="es" className={`${handlee.className}`}>
             <body>
-                <nav className="text-white py-3 px-4 flex items-center justify-between mb-10 border-b-2 border-white">
+                <nav className="py-3 px-4 flex items-center justify-between mb-10 border-b-2 border-black dark:border-white">
                     <Link className="text-xl tracking-tight" href="/">
                         Blog - Kevin Rogers
                     </Link>
@@ -38,8 +38,10 @@ export default function RootLayout({
                             return (
                                 <Link
                                     className={`"font-medium ${
-                                        isActive ? "text-white" : "text-gray-600"
-                                    } hover:text-white transition duration-150 ease-in-out" `}
+                                        isActive
+                                            ? "text-black dark:text-white underline"
+                                            : "text-gray-600"
+                                    } dark:hover:text-white hover:text-black transition duration-150 ease-in-out" `}
                                     href={link.href}
                                     key={link.name}
                                 >

@@ -8,12 +8,19 @@ export default function LinealProgramming() {
     const [problemsArray, setProblemsArray] = useState<LinealProgrammingProblem[]>([]);
 
     useEffect(() => {
-        fetch(" /data/unit1/LinealProgrammingProblems.json")
-            .then((response) => response.json())
-            .then((data: { problems: LinealProgrammingProblem[] }) => {
-                setProblemsArray(data.problems);
-            })
-            .catch((error) => console.error("Error cargando JSON:", error));
+        const fetchData = async () => {
+            try {
+                const response = await fetch(" /data/unit1/LinealProgrammingProblems.json");
+                if (!response.ok) {
+                    throw new Error("No se pudo cargar el archivo JSON");
+                }
+                const data: LinealProgrammingProblem[] = await response.json(); 
+                setProblemsArray(data);
+            } catch (error) {
+                console.error("Error:", error);
+            }
+        };
+        fetchData();
     }, []);
 
     return (

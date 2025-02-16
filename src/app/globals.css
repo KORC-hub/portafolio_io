@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-    --background: #161616;
-    --foreground: #ededed;
+    --background: #ededed;
+    --foreground: #161616;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -14,7 +14,38 @@
     }
 }
 
+html {
+    scroll-behavior: smooth;
+}
 body {
     color: var(--foreground);
     background: var(--background);
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    background-color: var(--background);
+    z-index: 1000;
+}
+
+/* Ancho del scroll */
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+/* Color del fondo de la barra */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Color y forma del "pulgar" de la barra */
+::-webkit-scrollbar-thumb {
+    @apply bg-gray-600;
+}
+
+/* Cambiar color cuando se pasa el mouse */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--foreground);
 }
