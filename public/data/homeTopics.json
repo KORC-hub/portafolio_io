@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "title": "Unidad 1",
+        "link": "/unit1"
+    },
+    {
+        "id": 2,
+        "title": "Unidad 2",
+        "link": "/unit2"
+    },
+    {
+        "id": 3,
+        "title": "Unidad 3",
+        "link": "/unit3"
+    }
+]

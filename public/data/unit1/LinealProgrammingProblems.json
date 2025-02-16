@@ -1,0 +1,216 @@
+{
+    "problems": [
+        {
+            "question": "A una presentación escolar acuden 450 personas. El número de niños triplica al de madres, mientras que los padres solo suman la mitad que ellas.¿Cuántos padres, madres y niños asistieron?",
+            "tag":["Ejercicio de clase"],
+            "solution": {
+                "variables": [
+                    "x = \\text{número de madres} ",
+                    "3x = \\text{número de niños} ",
+                    "\\frac{x}{2} = \\text{número de padres}"
+                ],
+                "procedure": [
+                    "x + 3x + \\frac{x}{2} = 450 ",
+                    "4x + \\frac{x}{2} = 450",
+                    "\\frac{8x}{2} + \\frac{x}{2} = 450",
+                    "\\frac{9x}{2} = 450",
+                    "9x = 900",
+                    "x = 100"
+                ]
+            },
+            "result": "Asistieron 100 madres, 300 niños y 50 padres"
+        },
+        {
+            "question": "Dos inversores adquieren acciones de dos empresas distintas. La compra de 'A' asciende a 2,000 euros, mientras que la inversión de 'B' es de 10,000 euros. Ambos obtienen el mismo beneficio, pero entonces 'B' tiene tres veces más dinero que su compañero.¿Qué cantidad ganaron?",
+            "tag": ["Ejercicio de clase"],
+            "solution": {
+                "variables": [
+                    "x=\\text{cantidad ganada por cada inversor}",
+                    "A = 2,000 + x",
+                    "B = 10,000 + x"
+                ],
+                "procedure": [
+                    "10,000 + x = 3(2,000 + x)",
+                    "10,000 + x = 6,000 + 3x ",
+                    "10,000 - 6,000 = 3x - x ",
+                    "4,000 = 2x",
+                    "2,000 = x "
+                ]
+            },
+            "result": "Cada inversor ganó 2.000 euros."
+        },
+        {
+            "question": "Una herencia se distribuye de la siguiente manera: la mitad del dinero será para la esposa, un tercio para el hijo y la décima parte para una sobrina. Si además se reservan 20,000 euros para una obra benéfica, ¿a cuánto asciende la cantidad a repartir?",
+            "tag": ["Ejercicio de clase"],
+            "solution": {
+                "variables": ["x=\\text{cantidad repartida}"],
+                "procedure": [
+                    "\\frac{x}{2} = \\text{cantidad repartida a la esposa} \\to 50\\%",
+                    "\\frac{x}{3} = \\text{cantidad repartida al hijo} \\to 33.3\\%  ",
+                    "\\frac{x}{10} = \\text{cantidad repartida a la sobrina} \\to 10\\%  ",
+                    "\\text{Por lo tanto:} ",
+                    "20,000 \\to 100\\% - 93.3\\% = 6.7\\% ",
+                    "6.7\\% * 100 = 0.067 ",
+                    "x = \\frac{20,000}{0.067} = 298,507.46"
+                ]
+            },
+            "result": "La cantidad repartida fue de 298,507.46 euros"
+        },
+        {
+            "question": "Un padre tiene 49 años y su hijo 11. ¿Cuántos años deben transcurrir para que el padre triplique la edad de su hijo?",
+            "tag": ["Ejercicio de clase"],
+            "solution": {
+                "variables": ["x=\\text{cantidad de años que tienen que transcurrir}"],
+                "procedure": [
+                    "49 + x = 3(11+x)",
+                    "49 + x = 33+3x ",
+                    "49 - 33 = 3x-x ",
+                    "16 = 2x",
+                    "8 = x "
+                ]
+            },
+            "result": "Deben transcurrir 8 años para que el padre triplique la edad de su hijo"
+        },
+        {
+            "question": "Una fuente tiene 3 caños. El primero da 2,400 litros en 5 horas, el segundo 800 litros en 4 horas y el tercero 2,000 litros en 8 horas. Los tres juntos, ¿cuánto tiempo les toma verter 46,500 litros?",
+            "tag": ["Ejercicio de clase"],
+            "solution": {
+                "variables": ["x=\\text{numero de horas}"],
+                "procedure": [
+                    "\\text{Cada caño vierte en } x \\text{ horas la siguiente cantidad de agua:} ",
+                    "\\frac{2,400}{5} = 480x",
+                    "\\frac{800}{4} = 200x ",
+                    "\\frac{2,000}{8} = 250x",
+                    "\\text{por lo tanto:}",
+                    "480x + 200x + 250x= 46,500 ",
+                    "930x= 46,500 ",
+                    "x= \\frac{46,500}{930} ",
+                    "x= 50"
+                ]
+            },
+            "result": "A los tres caños les toma 50 horas verter 46,500 litros en la fuente"
+        },
+        {
+            "question": "En un almacén hay 200 cajas conteniendo dos tipos de mercancía cuyo peso total es 10.800 kg. Las cajas de un tipo pesan 60 kg cada una, mientras que las del segundo tipo solo 45 kg. ¿Cuántas cajas hay de cada tipo?",
+            "tag": ["Ejercicio de clase"],
+            "solution": {
+                "variables": [],
+                "procedure": []
+            },
+            "result": "Hay de cajas de 60kg y cajas de 45kg"
+        },
+        {
+            "question": "Se quiere repartir equitativamente un número de bolas entre varias cajas. Si se introducen 50 en cada una, sobran 55, pero si se guardan 60, quedan faltando 5. ¿De cuántas cajas se dispone?",
+            "tag": ["Ejercicio de clase"],
+            "solution": {
+                "variables": [],
+                "mainFunction": [],
+                "restrictions": [],
+                "procedure": []
+            },
+            "result": ""
+        },
+        {
+            "question": "Un autobús que hace el recorrido Cali-Buga, ofrece asientos para fumadores al precio de 10.000 pesos y a no fumadores al precio de 6.000 pesos. Al no fumador se le deja llevar 50 kg de peso y al fumador 20 kg. Si el autobús tiene 90 asientos y admite un equipaje de hasta 3.000 kg. Además, debe considerarse que por políticas de la empresa, deben ofrecerse como mínimo 10 asientos para pasajeros no fumadores.",
+            "tag": ["Ejercicio de clase"],
+            "solution": {
+                "variables": [
+                    "x = \\text{cantidad de pasajeros fumadores}",
+                    "y = \\text{cantidad de pasajeros No fumadores}"
+                ],
+                "mainFunction": [
+                    "\\text{Objetivo: Maximizar}",
+                    "10,000x + 6,000y = \\text{Ganacia total}"
+                ],
+                "restrictions": ["x+y \\le 90", "20x+50y \\le 3,000", "x \\ge 0", "y \\ge 0"]
+            },
+            "result": ""
+        },
+        {
+            "question": "Un herrero con 80 kg de acero y 120 kg de aluminio quiere hacer bicicletas de paseo y de montaña que quiere vender, respectivamente, a 20.000 y 15.000 pesos cada una para sacar el máximo beneficio. Para la de paseo empleará 1 kg de acero y 3 kg de aluminio, y para la de montaña 2 kg de ambos metales.",
+            "tag": ["Ejercicio de clase"],
+            "solution": {
+                "variables": [
+                    "x = \\text{cantidad de bicicletas de paseo}",
+                    "y = \\text{cantidad de bicicletas de montaña}"
+                ],
+                "mainFunction": [
+                    "\\text{Objetivo: Maximizar}",
+                    "20,000x + 15,000y = \\text{Ganacia total}"
+                ],
+                "restrictions": ["x+2y \\le 80", "3x+2y \\le 120", "x \\ge 0", "y \\ge 0"]
+            },
+            "result": ""
+        },
+        {
+            "question": "Una compañía fabrica y vende dos modelos de lámpara L1 y L2. Para su fabricación se necesita un trabajo manual de 20 minutos para el modelo L1 y de 30 minutos para el L2; y un trabajo de máquina de 20 minutos para el modelo L1 y de 10 minutos para L2. Se dispone para el trabajo manual de 100 horas al mes y para la máquina 80 horas al mes. Sabiendo que el beneficio por unidad es de 15 y 10 euros para L1 y L2, respectivamente.",
+            "tag": ["Ejercicio de clase"],
+            "solution": {
+                "variables": [
+                    "x = \\text{cantidad de lamparas de tipo } L_{1}",
+                    "y = \\text{cantidad de lamparas de tipo } L_{2}"
+                ],
+                "mainFunction": [
+                    "\\text{Objetivo: Maximizar}",
+                    "15x + 10y = \\text{Ganacia total}"
+                ],
+                "restrictions": [
+                    "\\text{convertimos minutos a horas:}",
+                    "\\frac{1}{3}x + \\frac{1}{2}y \\le 100",
+                    "\\frac{1}{3}x + \\frac{1}{6}y \\le 80",
+                    "x \\ge 0",
+                    "y \\ge 0"
+                ]
+            },
+            "result": ""
+        },
+        {
+            "question": "Se dispone de 600 g de un determinado fármaco para elaborar pastillas grandes y pequeñas. Las grandes pesan 40 g y las pequeñas 30 g. Se necesitan al menos tres pastillas grandes, y al menos el doble de pequeñas que de las grandes. Cada pastilla grande proporciona un beneficio de 2 € y la pequeña de 1 €. ¿Cuántas pastillas se han de elaborar de cada clase para que el beneficio sea máximo?",
+            "tag": ["Ejercicio de clase"],
+            "solution": {
+                "variables": [
+                    "x = \\text{cantidad de pastillas grandes}",
+                    "y = \\text{cantidad de pastillas pequeñas}"
+                ],
+                "mainFunction": ["\\text{Objetivo: Maximizar}", "2x + y = \\text{Ganacia total}"],
+                "restrictions": ["40x+30y \\le 600", "x \\ge 3", "y \\ge 2x"]
+            },
+            "result": ""
+        },
+        {
+            "question": "Con el comienzo del curso se va a lanzar unas ofertas de material escolar. Unos almacenes quieren ofrecer 600 cuadernos, 500 carpetas y 400 bolígrafos para la oferta, empaquetándolo de dos formas distintas: en el primer bloque pondrá 2 cuadernos, 1 carpeta y 2 bolígrafos; en el segundo, pondrán 3 cuadernos, 1 carpeta y 1 bolígrafo. Los precios de cada paquete serán 6.5 y 7 €, respectivamente. ¿Cuántos paquetes le conviene poner de cada tipo para obtener el máximo beneficio?",
+            "tag": ["Ejercicio de clase"],
+            "solution": {
+                "variables": [
+                    "x = \\text{cantidad de paquetes del primer bloque}",
+                    "y = \\text{cantidad de paquetes del segundo bloque}"
+                ],
+                "mainFunction": [
+                    "\\text{Objetivo: Maximizar}",
+                    "6.5x + 7y = \\text{Ganacia total}"
+                ],
+                "restrictions": [
+                    "2x+3y \\le 600",
+                    "x+y \\le 500",
+                    "2x+y \\le 400",
+                    "x \\ge 0",
+                    "y \\ge 0"
+                ]
+            },
+            "result": ""
+        },
+        {
+            "question": "En una granja de pollos se da una dieta, para engordar, con una composición mínima de 15 unidades de una sustancia A y otras 15 de una sustancia B.\n\nEn el mercado solo se encuentran dos clases de compuestos: el tipo X con una composición de una unidad de A y 5 de B, y el otro tipo, Y, con una composición de cinco unidades de A y una de B. El precio del tipo X es de 10 euros y del tipo Y es de 30 €.",
+            "tag": ["Ejercicio de clase"],
+            "solution": {
+                "variables": [
+                    "x = \\text{cantidad de compuesto tipo X}",
+                    "y = \\text{cantidad de compuesto tipo Y}"
+                ],
+                "mainFunction": ["\\text{Objetivo: Minimizar}", "10x + 30y = \\text{Gasto total}"],
+                "restrictions": ["x+5y \\ge 15", "5x + y \\ge 15", "x \\ge 0", "y \\ge 0"]
+            },
+            "result": ""
+        }
+    ]
+}
