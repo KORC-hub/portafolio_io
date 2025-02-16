@@ -2,26 +2,15 @@
 
 import Carousel from "@/components/Carousel";
 import { useEffect, useState } from "react";
-
-interface Data {
-    question: string;
-    numberVariables: number;
-    solution: {
-        variables: string;
-        mainFunction: string;
-        restrictions: string;
-        procedure: string;
-    };
-    result: string;
-}
+import { LinealProgrammingProblem } from "@/models/LinealProgrammingProblem";
 
 export default function LinealProgramming() {
-    const [problemsArray, setProblemsArray] = useState<Data[]>([]);
+    const [problemsArray, setProblemsArray] = useState<LinealProgrammingProblem[]>([]);
 
     useEffect(() => {
-        fetch(" /data/LinealProgrammingProblems.json")
+        fetch(" /data/unit1/LinealProgrammingProblems.json")
             .then((response) => response.json())
-            .then((data: { problems: Data[] }) => {
+            .then((data: { problems: LinealProgrammingProblem[] }) => {
                 setProblemsArray(data.problems);
             })
             .catch((error) => console.error("Error cargando JSON:", error));
