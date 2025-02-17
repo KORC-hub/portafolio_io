@@ -12,20 +12,28 @@ export default {
             colors: {
                 background: "var(--background)",
                 foreground: "var(--foreground)",
+                highlight: "var(--highlight)",
             },
             typography: {
                 DEFAULT: {
                     css: {
                         h1: {
-                            color: "white",
+                            color: "var(--foreground)",
                             fontWeight: "700",
                         },
                         h2: {
-                            color: "white",
-                            borderBottom: "1px solid gray",
+                            color: "var(--foreground)",
+                            borderBottom: "1px solid var(--foreground)",
+                            borderOpacity: "0.9",
                         },
                         strong: {
-                            color: "#2accf9",
+                            color: "var(--highlight)",
+                        },
+                        p: {
+                            color: "var(--foreground)",
+                        },
+                        li: {
+                            color: "var(--foreground)",
                         },
                     },
                 },
