@@ -1,4 +1,4 @@
-import { TextArrayToLatex } from "@/utils/latex";
+import { TextArrayToLatex } from "@/utils/Latex";
 
 type Props = {
     content: string[];
