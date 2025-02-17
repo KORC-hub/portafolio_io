@@ -336,10 +336,11 @@
                 "300x+5,000y \\le  100,000 \\to \\text{presupuesto}",
                 "10,000x+400,000y \\ge 5,000,000 \\to \\text{potenciales clientes}",
                 "x \\ge 50",
+                "300x \\le 30,000",
                 "\\text{No Negatividad:}",
                 "y \\ge 0"
             ]
         },
-        "result": "La política de publicidad de costo mínimo es 50 minutos de publicidad en radio y 11.25 minutos de publicidad en TV, lo que daria un gasto total de 71,250 dolares en publicidad"
+        "result": ""
     }
 ]

@@ -37,11 +37,11 @@ export default function Home() {
 
     return (
         <div className="mx-5">
-            <div className="prose text-white max-w-full">
+            <div className="prose text-white max-w-3/4 justify-center">
                 <Markdown>{markdownContent}</Markdown>
             </div>
             <h2 className="text-4xl">Unidades:</h2>
-            <section className="sm:my-5 grid grid-cols-1 lg:grid-cols-3 gap-x-8 gap-y-4 px-6">
+            <section className="sm:my-5 grid grid-cols-1 lg:grid-cols-3 gap-x-8 gap-y-4 px-6 border-white">
                 {topicsArray.map((topic) => (
                     <TopicCard key={topic.id} title={topic.title} link={topic.link}></TopicCard>
                 ))}
