@@ -37,7 +37,7 @@ export default function Home() {
 
     return (
         <div className="mx-5">
-            <div className="prose text-white max-w-full mx-10">
+            <div className="prose text-white max-w-full mx-30">
                 <Markdown>{markdownContent}</Markdown>
             </div>
             <h2 className="text-4xl">Unidades:</h2>
