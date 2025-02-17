@@ -13,12 +13,13 @@ export default function Home() {
         const fetchData = async () => {
             try {
                 const [topicsResponse, markdownResponse] = await Promise.all([
-                    fetch(" /data/homeTopics.json"),
-                    fetch("/data/operationsResearch.md"),
+                    fetch("/data/homeTopics.json"),
+                    fetch("/text/operationsResearch.md"),
                 ]);
 
-                if (!topicsResponse.ok) throw new Error("No se pudo cargar los archivos");
-                if (!markdownResponse.ok) throw new Error("No se pudo cargar los archivos");
+                if (!topicsResponse.ok) throw new Error("No se pudo cargar los archivos JSON");
+                if (!markdownResponse.ok)
+                    throw new Error("No se pudo cargar los archivos Markdown");
 
                 const [topicsData, markdownText] = await Promise.all([
                     topicsResponse.json(), // Convertir JSON
@@ -36,7 +37,7 @@ export default function Home() {
 
     return (
         <div className="mx-5">
-            <div className="prose prose-lg text-white max-w-full">
+            <div className="prose text-white max-w-full">
                 <Markdown>{markdownContent}</Markdown>
             </div>
             <h2 className="text-4xl">Unidades:</h2>

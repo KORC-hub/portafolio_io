@@ -22,6 +22,7 @@ export default {
                         },
                         h2: {
                             color: "white",
+                            borderBottom: "1px solid gray",
                         },
                         strong: {
                             color: "#2accf9",

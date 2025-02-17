@@ -3,12 +3,12 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import "./globals.css";
-import { Handlee } from "next/font/google";
+import { JetBrains_Mono } from "next/font/google";
 
-const handlee = Handlee({
+const JetBrains = JetBrains_Mono({
     subsets: ["latin"],
     display: "swap",
-    weight: "400",
+    weight: "100",
 });
 
 const navLinks = [
@@ -24,7 +24,7 @@ export default function RootLayout({
 }>) {
     const pathname = usePathname();
     return (
-        <html lang="es" className={`${handlee.className}`}>
+        <html lang="es" className={`${JetBrains.className}`}>
             <body>
                 <nav className="py-3 px-4 flex items-center justify-between mb-10 border-b-2 border-black dark:border-white">
                     <Link className="text-xl tracking-tight" href="/">
