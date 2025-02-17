@@ -38,7 +38,7 @@ export default function LinealProgramming() {
 
     return (
         <div className="my-10 mx-5">
-            <div className="prose text-white max-w-2/3 items-center">
+            <div className="prose text-white max-w-full mx-10">
                 <Markdown>{markdownContent}</Markdown>
             </div>
             <div>
