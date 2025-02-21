@@ -44,14 +44,30 @@ export default function Carousel({ problems }: Props) {
     };
 
     return (
-        <div className="flex mx-10">
-            <div className="flex justify-center items-center ">
-                <button className=" h-full m-4 p-4 text-6xl hover:text-blue-400" onClick={previous}>
+        <div>
+            <div className="flex xl:mx-10">
+                <div className="invisible w-0 flex justify-center items-center xl:visible xl:w-auto">
+                    <button
+                        className=" h-full m-4 p-4 text-6xl hover:text-blue-400"
+                        onClick={previous}
+                    >
+                        {"<"}
+                    </button>
+                </div>
+                <Card title={`Problema ${selectIndex + 1}`} problem={selectProblem}></Card>
+                <div className="invisible  w-0 flex justify-center items-cente xl:visible xl:w-auto">
+                    <button
+                        className=" h-full m-4 p-4 text-6xl hover:text-blue-400 "
+                        onClick={next}
+                    >
+                        {">"}
+                    </button>
+                </div>
+            </div>
+            <div className="visible text-center xl:invisible">
+                <button className="h-full m-4 p-4 text-6xl hover:text-blue-400" onClick={previous}>
                     {"<"}
                 </button>
-            </div>
-            <Card title={`Problema ${selectIndex + 1}`} problem={selectProblem}></Card>
-            <div className="flex justify-center items-cente">
                 <button className="h-full m-4 p-4 text-6xl hover:text-blue-400" onClick={next}>
                     {">"}
                 </button>

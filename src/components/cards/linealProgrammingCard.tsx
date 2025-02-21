@@ -34,27 +34,29 @@ export default function Card({ title, problem }: Props) {
                         title="Pregunta"
                         textContent={problem.question}
                     ></Section>
-                    <Section show={Object.entries.length !== 0} title="Planteamiento">
-                        {Object.entries(problem.solution).map(([key, value]) => (
-                            <SubSection
-                                key={key}
-                                title={
-                                    key === "variable"
-                                        ? "Variables"
-                                        : key === "mainFunction"
-                                        ? "Funcion objetivo"
-                                        : key === "restrictions"
-                                        ? "Restricciones"
-                                        : key === "procedure"
-                                        ? "Procedimiento"
-                                        : key
-                                }
-                                show={value.length > 0}
-                            >
-                                <Latex content={value}></Latex>
-                            </SubSection>
-                        ))}
-                    </Section>
+                    <div className="truncate        ">
+                        <Section show={Object.entries.length !== 0} title="Planteamiento">
+                            {Object.entries(problem.solution).map(([key, value]) => (
+                                <SubSection
+                                    key={key}
+                                    title={
+                                        key === "variable"
+                                            ? "Variables"
+                                            : key === "mainFunction"
+                                            ? "Funcion objetivo"
+                                            : key === "restrictions"
+                                            ? "Restricciones"
+                                            : key === "procedure"
+                                            ? "Procedimiento"
+                                            : key
+                                    }
+                                    show={value.length > 0}
+                                >
+                                    <Latex content={value}></Latex>
+                                </SubSection>
+                            ))}
+                        </Section>
+                    </div>
                     <Section
                         show={problem.result !== ""}
                         title="Respuesta"
