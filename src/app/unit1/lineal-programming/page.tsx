@@ -13,7 +13,7 @@ export default function LinealProgramming() {
         const fetchData = async () => {
             try {
                 const [ProblemsResponse, markdownResponse] = await Promise.all([
-                    fetch(" /data/unit1/LinealProgrammingProblems.json"),
+                    fetch(" /data/unit1/oneVariableProblems.json"),
                     fetch("/text/unit1/linealProgramming.md"),
                 ]);
 
@@ -41,8 +41,7 @@ export default function LinealProgramming() {
             <div className="prose text-white max-w-full m-auto lg:w-4/5">
                 <Markdown>{markdownContent}</Markdown>
             </div>
-            <div>
-                <h2 className="my-10 text-3xl">Resolucion de problemas</h2>
+            <div className="mt-10">
                 <Carousel problems={problemsArray}></Carousel>
             </div>
         </div>
