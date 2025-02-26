@@ -2,7 +2,19 @@
     {
         "id": 1,
         "title": "Programacion lineal",
-        "explain": "Introduccion y generacion de modelos matematicos para la resolucion de problemas con una y dos variables",
+        "explain": "Introduccion y generacion de modelos matematicos para la resolucion de problemas",
         "link": "unit1/lineal-programming"
+    },
+    {
+        "id": 2,
+        "title": "Plantemiento y Método grafico",
+        "explain": "Planteamiento y Solución de un problema de programación lineal por el método grafico.",
+        "link": "unit1/planting-graphicalMethod"
+    },
+    {
+        "id": 3,
+        "title": "Variables de holgura",
+        "explain": "Solución de un problema de programación lineal por el método algebraico. Mediante el uso de variables de holgura.",
+        "link": "unit1/slack-variables"
     }
 ]
