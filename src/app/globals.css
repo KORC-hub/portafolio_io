@@ -6,6 +6,7 @@
     --background: #161616;
     --foreground: #ededed;
     --highlight: #2accf9;
+    --link: #2accf9;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -50,4 +51,8 @@ nav {
 /* Cambiar color cuando se pasa el mouse */
 ::-webkit-scrollbar-thumb:hover {
     background: var(--foreground);
+}
+
+.highlight {
+    color: var(--highlight);
 }

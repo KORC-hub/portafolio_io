@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
 import typography from "@tailwindcss/typography";
+import { text } from "stream/consumers";
 
 export default {
     content: [
@@ -34,6 +35,10 @@ export default {
                         },
                         li: {
                             color: "var(--foreground)",
+                        },
+                        a: {
+                            color: "var(--link)",
+                            textDecoration: "underline",
                         },
                     },
                 },
