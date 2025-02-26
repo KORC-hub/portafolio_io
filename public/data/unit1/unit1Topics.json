@@ -8,7 +8,7 @@
     {
         "id": 2,
         "title": "Plantemiento y Método grafico",
-        "explain": "Planteamiento y Solución de un problema de programación lineal por el método grafico.",
+        "explain": "Planteamiento y solución de un problema de programación lineal de dos variables por el método grafico.",
         "link": "unit1/planting-graphicalMethod"
     },
     {

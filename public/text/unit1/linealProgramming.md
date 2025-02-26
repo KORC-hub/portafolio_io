@@ -36,3 +36,7 @@ Es una expresión matemática que define el objetivo del problema, ya sea maximi
 Las **restricciones** son condiciones que limitan los valores que pueden tomar las variables de decisión. Estas pueden ser físicas, técnicas, económicas, medioambientales, jurídicas, sociales, etc.
 
 Estas restricciones se expresan mediante ecuaciones o inecuaciones lineales que las variables de decisión deben satisfacer para que la solución sea viable.
+
+# Resolucion de problemas de una variable
+
+Aunque los problemas de una variable no se coincideran problemas de programacion lineal, a continuacion se solucionan algunos. En la siguiente seccion [Planteamiento y Método grafico](http://localhost:3000/unit1/planting-graphicalMethod) se profundizara en el planteamiento y solucion de problemas de dos variables.

@@ -1,0 +1,123 @@
+[
+    {
+        "question": "A una presentación escolar acuden 450 personas. El número de niños triplica al de madres, mientras que los padres solo suman la mitad que ellas.¿Cuántos padres, madres y niños asistieron?",
+        "tag": ["Ejercicio de clase"],
+        "solution": {
+            "variables": [
+                "x = \\text{número de madres} ",
+                "3x = \\text{número de niños} ",
+                "\\frac{x}{2} = \\text{número de padres}"
+            ],
+            "procedure": [
+                "x + 3x + \\frac{x}{2} = 450 ",
+                "4x + \\frac{x}{2} = 450",
+                "\\frac{8x}{2} + \\frac{x}{2} = 450",
+                "\\frac{9x}{2} = 450",
+                "9x = 900",
+                "x = 100"
+            ]
+        },
+        "result": "Asistieron 100 madres, 300 niños y 50 padres"
+    },
+    {
+        "question": "Dos inversores adquieren acciones de dos empresas distintas. La compra de 'A' asciende a 2,000 euros, mientras que la inversión de 'B' es de 10,000 euros. Ambos obtienen el mismo beneficio, pero entonces 'B' tiene tres veces más dinero que su compañero.¿Qué cantidad ganaron?",
+        "tag": ["Ejercicio de clase"],
+        "solution": {
+            "variables": [
+                "x=\\text{cantidad ganada por cada inversor}",
+                "A = 2,000 + x",
+                "B = 10,000 + x"
+            ],
+            "procedure": [
+                "10,000 + x = 3(2,000 + x)",
+                "10,000 + x = 6,000 + 3x ",
+                "10,000 - 6,000 = 3x - x ",
+                "4,000 = 2x",
+                "2,000 = x "
+            ]
+        },
+        "result": "Cada inversor ganó 2.000 euros."
+    },
+    {
+        "question": "Una herencia se distribuye de la siguiente manera: la mitad del dinero será para la esposa, un tercio para el hijo y la décima parte para una sobrina. Si además se reservan 20,000 euros para una obra benéfica, ¿a cuánto asciende la cantidad a repartir?",
+        "tag": ["Ejercicio de clase"],
+        "solution": {
+            "variables": ["x=\\text{cantidad repartida}"],
+            "procedure": [
+                "\\frac{x}{2} = \\text{cantidad repartida a la esposa} \\to 50\\%",
+                "\\frac{x}{3} = \\text{cantidad repartida al hijo} \\to 33.3\\%  ",
+                "\\frac{x}{10} = \\text{cantidad repartida a la sobrina} \\to 10\\%  ",
+                "\\text{Por lo tanto:} ",
+                "20,000 \\to 100\\% - 93.3\\% = 6.7\\% ",
+                "6.7\\% * 100 = 0.067 ",
+                "x = \\frac{20,000}{0.067} = 298,507.46"
+            ]
+        },
+        "result": "La cantidad repartida fue de 298,507.46 euros"
+    },
+    {
+        "question": "Un padre tiene 49 años y su hijo 11. ¿Cuántos años deben transcurrir para que el padre triplique la edad de su hijo?",
+        "tag": ["Ejercicio de clase"],
+        "solution": {
+            "variables": ["x=\\text{cantidad de años que tienen que transcurrir}"],
+            "procedure": [
+                "49 + x = 3(11+x)",
+                "49 + x = 33+3x ",
+                "49 - 33 = 3x-x ",
+                "16 = 2x",
+                "8 = x "
+            ]
+        },
+        "result": "Deben transcurrir 8 años para que el padre triplique la edad de su hijo"
+    },
+    {
+        "question": "Una fuente tiene 3 caños. El primero da 2,400 litros en 5 horas, el segundo 800 litros en 4 horas y el tercero 2,000 litros en 8 horas. Los tres juntos, ¿cuánto tiempo les toma verter 46,500 litros?",
+        "tag": ["Ejercicio de clase"],
+        "solution": {
+            "variables": ["x=\\text{numero de horas}"],
+            "procedure": [
+                "\\text{Cada caño vierte en } x \\text{ horas la siguiente cantidad de agua:} ",
+                "\\frac{2,400}{5} = 480x",
+                "\\frac{800}{4} = 200x ",
+                "\\frac{2,000}{8} = 250x",
+                "\\text{por lo tanto:}",
+                "480x + 200x + 250x= 46,500 ",
+                "930x= 46,500 ",
+                "x= \\frac{46,500}{930} ",
+                "x= 50"
+            ]
+        },
+        "result": "A los tres caños les toma 50 horas verter 46,500 litros en la fuente"
+    },
+    {
+        "question": "En un almacén hay 200 cajas conteniendo dos tipos de mercancía cuyo peso total es 10.800 kg. Las cajas de un tipo pesan 60 kg cada una, mientras que las del segundo tipo solo 45 kg. ¿Cuántas cajas hay de cada tipo?",
+        "tag": ["Ejercicio de clase"],
+        "solution": {
+            "variables": [
+                "x = \\text{cantidad de cajas de 60kg}",
+                "y = \\text{cantidad de cajas de 45kg}"
+            ],
+            "procedure": [
+                "x+y= 200 \\to y=200-x \\ \\  \\ \\text{ (1)}",
+                "60x+45y=10,800 \\ \\ \\ \\text{ (2)}",
+                "\\text{sustituyendo (1) en (2)}",
+                "60x+45(200-x)=10,800",
+                "60x+9,000-45x=10,800",
+                "60x-45x = 10,800-9,000",
+                "15x = 1,800",
+                "x = 120"
+            ]
+        },
+        "result": "Hay 120 cajas de 60kg y 60 cajas de 45kg"
+    },
+    {
+        "question": "Se quiere repartir equitativamente un número de bolas entre varias cajas. Si se introducen 50 en cada una, sobran 55, pero si se guardan 60, quedan faltando 5. ¿De cuántas cajas se dispone?",
+        "tag": ["Ejercicio de clase"],
+        "solution": {
+            "variables": ["x = \\text{numero de cajas}"],
+            "procedure": ["50x+55 = 60x-5", "55+5=60x-50x", "60=10x", "6=x"]
+        },
+        "result": "Se dispone de 6 cajas"
+    }
+
+]
