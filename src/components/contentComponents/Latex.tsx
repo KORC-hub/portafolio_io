@@ -6,5 +6,7 @@ type Props = {
 
 export default function SubSection(props: Props) {
     const content = TextArrayToLatex(props.content);
-    return <p className="ml-10" dangerouslySetInnerHTML={{ __html: content }}></p>;
+    return (
+        <p className="ml-10 text-sm md:text-lg lg:text-xl" dangerouslySetInnerHTML={{ __html: content }}></p>
+    );
 }
