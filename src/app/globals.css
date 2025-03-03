@@ -5,15 +5,15 @@
 :root {
     --background: #161616;
     --foreground: #ededed;
-    --highlight: #2accf9;
-    --link: #2accf9;
+    --highlight: #93c5fd;
+    --link: #93c5fd;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
         --background: #161616;
         --foreground: #ededed;
-        --highlight: #2accf9;
+        --highlight: #93c5fd;
     }
 }
 
@@ -55,4 +55,21 @@ nav {
 
 .highlight {
     color: var(--highlight);
+    opacity: 1;
+}
+
+/*---------------- function plot ------------------*/
+
+.origin {
+    stroke: white;
+}
+
+.x.axis .domain,
+.x.axis .tick line {
+    stroke: var(--background);
+}
+
+.y.axis .domain,
+.y.axis .tick line {
+    stroke: var(--background);
 }
