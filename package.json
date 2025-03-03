@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "function-plot": "^1.25.1",
     "katex": "^0.16.21",
     "next": "15.1.7",
     "react": "^19.0.0",
