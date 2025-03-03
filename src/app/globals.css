@@ -73,3 +73,7 @@ nav {
 .y.axis .tick line {
     stroke: var(--background);
 }
+
+.top-right-legend {
+    opacity: 0;
+}
