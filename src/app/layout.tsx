@@ -38,7 +38,7 @@ export default function RootLayout({
                             return (
                                 <Link
                                     className={`"font-medium ${
-                                        isActive ? "text-white underline" : "text-gray-600"
+                                        isActive ? "highlight" : "text-gray-400"
                                     } hover:text-white transition duration-150 ease-in-out" `}
                                     href={link.href}
                                     key={link.name}
