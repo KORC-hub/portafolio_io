@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import TopicCard from "@/components/TopicCard";
 import { Topic } from "@/models/Topic";
-import Markdown from "react-markdown";
+import Markdown from "@/components/contentComponents/Markdown";
 
 export default function Home() {
     const [topicsArray, setTopicsArray] = useState<Topic[]>([]);
@@ -36,16 +36,13 @@ export default function Home() {
     }, []);
 
     return (
-        <div className="mx-10">
-            <div className="prose text-white max-w-full m-auto lg:w-4/5">
-                <Markdown>{markdownContent}</Markdown>
-            </div>
-            <h2 className="text-4xl">Unidades:</h2>
+        <>
+            <Markdown>{markdownContent}</Markdown>
             <section className="sm:my-5 grid grid-cols-1 lg:grid-cols-3 gap-x-8 gap-y-4 px-6 border-white">
                 {topicsArray.map((topic) => (
                     <TopicCard key={topic.id} title={topic.title} link={topic.link}></TopicCard>
                 ))}
             </section>
-        </div>
+        </>
     );
 }

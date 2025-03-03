@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Markdown from "react-markdown";
+import Markdown from "@/components/contentComponents/Markdown";
+import Plot from "@/components/contentComponents/Plot";
 import Carousel from "@/components/Carousel";
 import { LinealProgrammingProblem } from "@/models/LinealProgrammingProblem";
 
@@ -35,13 +36,10 @@ export default function LinealProgramming() {
     }, []);
 
     return (
-        <div className="m-10">
-            <div className="prose text-white max-w-full m-auto lg:w-4/5">
-                <Markdown>{markdownContent}</Markdown>
-            </div>
-            <div className="mt-10">
-                <Carousel problems={problemsArray}></Carousel>
-            </div>
-        </div>
+        <>
+            <Markdown>{markdownContent}</Markdown>
+            <Plot width={800} height={400}></Plot>
+            <Carousel problems={problemsArray} />
+        </>
     );
 }
