@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import dynamic from "next/dynamic";
 import Markdown from "@/components/contentComponents/Markdown";
-import Plot from "@/components/contentComponents/Plot";
 import Carousel from "@/components/Carousel";
 import { LinealProgrammingProblem } from "@/models/LinealProgrammingProblem";
 
@@ -35,10 +35,14 @@ export default function LinealProgramming() {
         fetchData();
     }, []);
 
+    const DynamicPlot = dynamic(() => import("@/components/contentComponents/Plot"), {
+        ssr: false,
+    });
+
     return (
         <>
             <Markdown>{markdownContent}</Markdown>
-            <Plot width={800} height={400}></Plot>
+            <DynamicPlot width={800} height={400}></DynamicPlot>
             <Carousel problems={problemsArray} />
         </>
     );
