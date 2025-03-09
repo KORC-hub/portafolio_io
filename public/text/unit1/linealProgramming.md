@@ -14,8 +14,8 @@ El modelo simbólico se representa con una **matriz** o una **ecuación**. Estos
 
 Pero por lo general y para resumir, **un modelo es una herramienta analítica que nos sirve para lograr una visión bien estructurada de la realidad**, y que tiene como objetivos:
 
--   Proporcionar un medio para **analizar el comportamiento** de las componentes de un sistema
--   **Optimizar el desempeño** del sistema
+- Proporcionar un medio para **analizar el comportamiento** de las componentes de un sistema
+- **Optimizar el desempeño** del sistema
 
 ## Características y limitaciones de un modelo matemático
 
@@ -37,6 +37,21 @@ Las **restricciones** son condiciones que limitan los valores que pueden tomar l
 
 Estas restricciones se expresan mediante ecuaciones o inecuaciones lineales que las variables de decisión deben satisfacer para que la solución sea viable.
 
-# Resolucion de problemas de una variable
+# Resolucion de problemas dos variable por el metodo grafico
 
-Aunque los problemas de una variable no se coincideran problemas de programacion lineal, a continuacion se solucionan algunos. En la siguiente seccion [Planteamiento y Método grafico](http://localhost:3000/unit1/planting-graphicalMethod) se profundizara en el planteamiento y solucion de problemas de dos variables.
+El método gráfico es una forma visual de resolver sistemas de ecuaciones lineales. Este método es especialmente útil para sistemas de dos variables, ya que permite visualizar las soluciones en un plano cartesiano.
+
+Para solucionar un problema hay que seguir los siguientes pasos:
+
+1. Definir las variables, la funcion objetivo y las restricciones.
+2. Convertir las restricciones a ecuaciones
+3. Graficar cada ecuación para encontrar la región factible
+4. Evaluar cada punto para encontrar el punto óptimo
+
+Al graficar las restricciones, se forma una región factible (área de soluciones posibles). Los puntos óptimos (máximos o mínimos) de la función objetivo siempre se encuentran en los vértices de esta zona.
+
+En el primer ejemplo analizado, los vértices de la región factible son **(0, 10)**, **(0, 60)**, **(50, 40)**,**(80, 10)**
+
+Al evaluar cada uno en la función objetivo, se concluye que el punto **(80, 10)** proporciona el máximo beneficio. Aunque, para problemas de minimización, el óptimo sería el vértice con el menor valor.
+
+**Nota**: En caso de que la grafica no sea visible el plano se puede alejar.
