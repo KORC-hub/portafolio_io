@@ -1,240 +1,289 @@
 [
-    {
-        "question": "Un autobús que hace el recorrido Cali-Buga, ofrece asientos para fumadores al precio de 10.000 pesos y a no fumadores al precio de 6.000 pesos. Al no fumador se le deja llevar 50 kg de peso y al fumador 20 kg. Si el autobús tiene 90 asientos y admite un equipaje de hasta 3.000 kg. Además, debe considerarse que por políticas de la empresa, deben ofrecerse como mínimo 10 asientos para pasajeros no fumadores.",
-        "tag": ["Ejercicio de clase"],
-        "solution": {
-            "variables": [
-                "x = \\text{cantidad de pasajeros fumadores}",
-                "y = \\text{cantidad de pasajeros No fumadores}"
-            ],
-            "mainFunction": [
-                "\\text{Objetivo: Maximizar}",
-                "10,000x + 6,000y = \\text{Ganacia total}"
-            ],
-            "restrictions": [
-                "x+y \\le 90",
-                "20x+50y \\le 3,000",
-                "\\text{No Negatividad:}",
-                "x \\ge 0",
-                "y \\ge 0"
-            ]
-        },
-        "result": ""
+  {
+    "question": "Un autobús que hace el recorrido Cali-Buga, ofrece asientos para fumadores al precio de 10.000 pesos y a no fumadores al precio de 6.000 pesos. Al no fumador se le deja llevar 50 kg de peso y al fumador 20 kg. Si el autobús tiene 90 asientos y admite un equipaje de hasta 3.000 kg. Además, debe considerarse que por políticas de la empresa, deben ofrecerse como mínimo 10 asientos para pasajeros no fumadores.",
+    "tag": ["Ejercicio de clase"],
+    "graphDomains": [100, 100],
+    "approach": {
+      "variables": [
+        "x = \\text{cantidad de pasajeros fumadores}",
+        "y = \\text{cantidad de pasajeros No fumadores}"
+      ],
+      "mainFunction": ["\\text{Objetivo: Maximizar}", "10,000x + 6,000y = \\text{Ganacia total}"],
+      "restrictions": [
+        "x+y \\le 90",
+        "20x+50y \\le 3,000",
+        "y \\ge 10",
+        "\\text{No Negatividad:}",
+        "x \\ge 0",
+        "y \\ge 0"
+      ]
     },
-    {
-        "question": "Un herrero con 80 kg de acero y 120 kg de aluminio quiere hacer bicicletas de paseo y de montaña que quiere vender, respectivamente, a 20.000 y 15.000 pesos cada una para sacar el máximo beneficio. Para la de paseo empleará 1 kg de acero y 3 kg de aluminio, y para la de montaña 2 kg de ambos metales.",
-        "tag": ["Ejercicio de clase"],
-        "solution": {
-            "variables": [
-                "x = \\text{cantidad de bicicletas de paseo}",
-                "y = \\text{cantidad de bicicletas de montaña}"
-            ],
-            "mainFunction": [
-                "\\text{Objetivo: Maximizar}",
-                "20,000x + 15,000y = \\text{Ganacia total}"
-            ],
-            "restrictions": [
-                "x+2y \\le 80",
-                "3x+2y \\le 120",
-                "\\text{No Negatividad:}",
-                "x \\ge 0",
-                "y \\ge 0"
-            ]
-        },
-        "result": "Para sacar el máximo beneficio el herrero debe de hacer 20 bicicletas de paseo y 30 bicicletas de montaña, dando como ganancia 850,000"
+    "solution": {
+      "ecuations": ["y = 90-x", "y=60-2x/5", "y=10"],
+      "procedure": ["10,000(80) + 6,000(10) = 860,000"]
     },
-    {
-        "question": "Una compañía fabrica y vende dos modelos de lámpara L1 y L2. Para su fabricación se necesita un trabajo manual de 20 minutos para el modelo L1 y de 30 minutos para el L2; y un trabajo de máquina de 20 minutos para el modelo L1 y de 10 minutos para L2. Se dispone para el trabajo manual de 100 horas al mes y para la máquina 80 horas al mes. Sabiendo que el beneficio por unidad es de 15 y 10 euros para L1 y L2, respectivamente.",
-        "tag": ["Ejercicio de clase"],
-        "solution": {
-            "variables": [
-                "x = \\text{cantidad de lamparas de tipo } L_{1}",
-                "y = \\text{cantidad de lamparas de tipo } L_{2}"
-            ],
-            "mainFunction": ["\\text{Objetivo: Maximizar}", "15x + 10y = \\text{Ganacia total}"],
-            "restrictions": [
-                "\\text{convertimos minutos a horas:}",
-                "\\frac{1}{3}x + \\frac{1}{2}y \\le 100",
-                "\\frac{1}{3}x + \\frac{1}{6}y \\le 80",
-                "\\text{No Negatividad:}",
-                "x \\ge 0",
-                "y \\ge 0"
-            ]
-        },
-        "result": "Para maximizar las ganacias se deben de fabricar 210 lamparas de tipo L1 y 60 lamparas del tipo L2, dando una ganacia de 3,750"
+    "result": "Para maximizar la ganancia se deben de vender 80 asientos para fumadores y 10 para no fumadores, dando una ganancia de 860,000"
+  },
+  {
+    "question": "Un herrero con 80 kg de acero y 120 kg de aluminio quiere hacer bicicletas de paseo y de montaña que quiere vender, respectivamente, a 20.000 y 15.000 pesos cada una para sacar el máximo beneficio. Para la de paseo empleará 1 kg de acero y 3 kg de aluminio, y para la de montaña 2 kg de ambos metales.",
+    "tag": ["Ejercicio de clase"],
+    "graphDomains": [100, 100],
+    "approach": {
+      "variables": [
+        "x = \\text{cantidad de bicicletas de paseo}",
+        "y = \\text{cantidad de bicicletas de montaña}"
+      ],
+      "mainFunction": ["\\text{Objetivo: Maximizar}", "20,000x + 15,000y = \\text{Ganacia total}"],
+      "restrictions": [
+        "x+2y \\le 80",
+        "3x+2y \\le 120",
+        "\\text{No Negatividad:}",
+        "x \\ge 0",
+        "y \\ge 0"
+      ]
     },
-    {
-        "question": "Se dispone de 600 g de un determinado fármaco para elaborar pastillas grandes y pequeñas. Las grandes pesan 40 g y las pequeñas 30 g. Se necesitan al menos tres pastillas grandes, y al menos el doble de pequeñas que de las grandes. Cada pastilla grande proporciona un beneficio de 2 € y la pequeña de 1 €. ¿Cuántas pastillas se han de elaborar de cada clase para que el beneficio sea máximo?",
-        "tag": ["Ejercicio de clase"],
-        "solution": {
-            "variables": [
-                "x = \\text{cantidad de pastillas grandes}",
-                "y = \\text{cantidad de pastillas pequeñas}"
-            ],
-            "mainFunction": ["\\text{Objetivo: Maximizar}", "2x + y = \\text{Ganacia total}"],
-            "restrictions": [
-                "40x+30y \\le 600",
-                "x \\ge 3",
-                "y \\ge 2x",
-                "\\text{No Negatividad:}",
-                "x \\ge 0",
-                "y \\ge 0"
-            ]
-        },
-        "result": ""
+    "solution": {
+      "ecuations": ["y = 40 - x/2", "y = 60 - 3x/2"],
+      "procedure": ["20,000(20) + 15,000(30) = 850,000"]
     },
-    {
-        "question": "Con el comienzo del curso se va a lanzar unas ofertas de material escolar. Unos almacenes quieren ofrecer 600 cuadernos, 500 carpetas y 400 bolígrafos para la oferta, empaquetándolo de dos formas distintas: en el primer bloque pondrá 2 cuadernos, 1 carpeta y 2 bolígrafos; en el segundo, pondrán 3 cuadernos, 1 carpeta y 1 bolígrafo. Los precios de cada paquete serán 6.5 y 7 €, respectivamente. ¿Cuántos paquetes le conviene poner de cada tipo para obtener el máximo beneficio?",
-        "tag": ["Ejercicio de clase"],
-        "solution": {
-            "variables": [
-                "x = \\text{cantidad de paquetes del primer bloque}",
-                "y = \\text{cantidad de paquetes del segundo bloque}"
-            ],
-            "mainFunction": ["\\text{Objetivo: Maximizar}", "6.5x + 7y = \\text{Ganacia total}"],
-            "restrictions": [
-                "2x+3y \\le 600",
-                "x+y \\le 500",
-                "2x+y \\le 400",
-                "\\text{No Negatividad:}",
-                "x \\ge 0",
-                "y \\ge 0"
-            ]
-        },
-        "result": ""
+    "result": "Para sacar el máximo beneficio el herrero debe de hacer 20 bicicletas de paseo y 30 bicicletas de montaña, dando como ganancia 850,000"
+  },
+  {
+    "question": "Una compañía fabrica y vende dos modelos de lámpara L1 y L2. Para su fabricación se necesita un trabajo manual de 20 minutos para el modelo L1 y de 30 minutos para el L2; y un trabajo de máquina de 20 minutos para el modelo L1 y de 10 minutos para L2. Se dispone para el trabajo manual de 100 horas al mes y para la máquina 80 horas al mes. Sabiendo que el beneficio por unidad es de 15 y 10 euros para L1 y L2, respectivamente.",
+    "tag": ["Ejercicio de clase"],
+    "graphDomains": [250, 350],
+    "approach": {
+      "variables": [
+        "x = \\text{cantidad de lamparas de tipo } L_{1}",
+        "y = \\text{cantidad de lamparas de tipo } L_{2}"
+      ],
+      "mainFunction": ["\\text{Objetivo: Maximizar}", "15x + 10y = \\text{Ganacia total}"],
+      "restrictions": [
+        "\\text{convertimos minutos a horas:}",
+        "\\frac{1}{3}x + \\frac{1}{2}y \\le 100",
+        "\\frac{1}{3}x + \\frac{1}{6}y \\le 80",
+        "\\text{No Negatividad:}",
+        "x \\ge 0",
+        "y \\ge 0"
+      ]
     },
-    {
-        "question": "En una granja de pollos se da una dieta, para engordar, con una composición mínima de 15 unidades de una sustancia A y otras 15 de una sustancia B.\n\nEn el mercado solo se encuentran dos clases de compuestos: el tipo X con una composición de una unidad de A y 5 de B, y el otro tipo, Y, con una composición de cinco unidades de A y una de B. El precio del tipo X es de 10 euros y del tipo Y es de 30 €.",
-        "tag": ["Ejercicio de clase"],
-        "solution": {
-            "variables": [
-                "x = \\text{cantidad de compuesto tipo X}",
-                "y = \\text{cantidad de compuesto tipo Y}"
-            ],
-            "mainFunction": ["\\text{Objetivo: Minimizar}", "10x + 30y = \\text{Gasto total}"],
-            "restrictions": [
-                "x+5y \\ge 15",
-                "5x + y \\ge 15",
-                "\\text{No Negatividad:}",
-                "x \\ge 0",
-                "y \\ge 0"
-            ]
-        },
-        "result": "Para cumplir con una composición mínima de 15 unidades de una sustancia A y otras 15 de una sustancia B y a su vez minizar el gasto se debe de comprar 2.5 de cada compuesto (X y Y), gastando solo 100 euros"
+    "solution": {
+      "ecuations": ["y = 200 -2x/3", "y = 480-2x"],
+      "procedure": ["15(210) + 10(60) = 3,750"]
     },
-    {
-        "question": "Unos grandes almacenes desean liquidar 200 camisas y 100 pantalones de la temporada anterior. Para ello lanzan, dos ofertas, A y B. La oferta A consiste en un lote de una camisa y un pantalón, que se venden a 30 €; la oferta B consiste en un lote de tres camisas y un pantalón, que se vende a 50 €. No se desea ofrecer menos de 20 lotes de la oferta A ni menos de 10 de la B. ¿Cuántos lotes ha de vender de cada tipo para maximizar la ganancia?",
-        "solution": {
-            "variables": [
-                "x = \\text{cantidad de lotes de la oferta A}",
-                "y = \\text{cantidad de lotes de la oferta B}"
-            ],
-            "mainFunction": ["\\text{Objetivo: Maximizar}", "30x + 50y = \\text{Ganacia total}"],
-            "restrictions": [
-                "x+3y \\le 200 \\to \\text{(camisas)}",
-                "x+y \\le 100 \\to \\text{(pantalones)}",
-                "x \\ge 20",
-                "y \\ge 10",
-                "\\text{No Negatividad:}",
-                "x \\ge 0",
-                "y \\ge 0"
-            ]
-        },
-        "result": "Para maximizar la ganancia se tiene que vender 50 lotes de la oferta A y 50 lotes de la oferta B"
+    "result": "Para maximizar las ganacias se deben de fabricar 210 lamparas de tipo L1 y 60 lamparas del tipo L2, dando una ganacia de 3,750"
+  },
+  {
+    "question": "Se dispone de 600 g de un determinado fármaco para elaborar pastillas grandes y pequeñas. Las grandes pesan 40 g y las pequeñas 30 g. Se necesitan al menos tres pastillas grandes, y al menos el doble de pequeñas que de las grandes. Cada pastilla grande proporciona un beneficio de 2 € y la pequeña de 1 €. ¿Cuántas pastillas se han de elaborar de cada clase para que el beneficio sea máximo?",
+    "tag": ["Ejercicio de clase"],
+    "graphDomains": [40, 20],
+    "approach": {
+      "variables": [
+        "x = \\text{cantidad de pastillas grandes}",
+        "y = \\text{cantidad de pastillas pequeñas}"
+      ],
+      "mainFunction": ["\\text{Objetivo: Maximizar}", "2x + y = \\text{Ganacia total}"],
+      "restrictions": [
+        "40x+30y \\le 600",
+        "x \\ge 3",
+        "y \\ge 2x",
+        "\\text{No Negatividad:}",
+        "x \\ge 0",
+        "y \\ge 0"
+      ]
     },
-    {
-        "question": "Una compañía produce dos tipos de calculadora, el modelo C1 y el modelo C2. El tiempo de fabricación de las calculadoras es de 1 hora para el modelo C1 y de 4 horas para el modelo C2. El costo de fabricación del modelo C1 es de 30€ y el costo del modelo C2 es de 20€. La compañía dispone de 1600 horas para fabricar las calculadoras y de 18000€ para gastos viables. La ganancia en cada calculadora del modelo C1 es de 10€ y la ganancia para el modelo C2 es de 8€. ¿Cuál debe ser el plan de producción para garantizar la máxima ganancia?",
-        "solution": {
-            "variables": [
-                "x = \\text{cantidad calculadoras del modelo} C_{1}",
-                "y = \\text{cantidad calculadoras del modelo} C_{2}"
-            ],
-            "mainFunction": ["\\text{Objetivo: Maximizar}", "10x + 8y = \\text{Ganacia total}"],
-            "restrictions": [
-                "x+4y \\le 1600 \\to \\text{(horas)}",
-                "30x+20y \\le 18,000\\to \\text{(coste de fabricacion)}",
-                "\\text{No Negatividad:}",
-                "x \\ge 0",
-                "y \\ge 0"
-            ]
-        },
-        "result": "El plan de producción para garantizar la máxima ganancia es hacer 400 calculadoras del modelo C1 y 300 del modelo C2"
+    "solution": {
+      "ecuations": ["y = 20 - 4x/3", "500x-1500", "y=2x"],
+      "procedure": ["2(6) + 12 = 24"]
     },
-    {
-        "question": "Un empresario desea vender 400 mesas y 200 sillas. Se ofrecen dos promociones, 1 y 2. La promoción 1 consiste en 1 mesa y en 1 silla, que se venden a 60€; la promoción 2 consiste en 3 mesas y en 1 silla, que se venden a 100€. No se desea ofrecer menos de 40 promociones de la oferta 1 ni menos de 20 promociones de la oferta 2. ¿Cuántas unidades debe producir la empresa para maximizar las ventas?",
-        "solution": {
-            "variables": [
-                "x = \\text{cantidad promociones tipo 1}",
-                "y = \\text{cantidad promociones tipo 2}"
-            ],
-            "mainFunction": ["\\text{Objetivo: Maximizar}", "60x + 100y = \\text{Ganacia total}"],
-            "restrictions": [
-                "x+3y \\le 400 \\to \\text{Mesas}",
-                "x+y \\le 200 \\to \\text{sillas}",
-                "x \\ge 40",
-                "y \\ge 20",
-                "\\text{No Negatividad:}",
-                "x \\ge 0",
-                "y \\ge 0"
-            ]
-        },
-        "result": "Se debe producir 100 mesas y 100 sillas para maximizar las ventas"
+    "result": "Para que el beneficio sea máximo se han de elaborar 6 pastillas grandes y 12 pequeñas, dando un beneficio de 24"
+  },
+  {
+    "question": "Con el comienzo del curso se va a lanzar unas ofertas de material escolar. Unos almacenes quieren ofrecer 600 cuadernos, 500 carpetas y 400 bolígrafos para la oferta, empaquetándolo de dos formas distintas: en el primer bloque pondrá 2 cuadernos, 1 carpeta y 2 bolígrafos; en el segundo, pondrán 3 cuadernos, 1 carpeta y 1 bolígrafo. Los precios de cada paquete serán 6.5 y 7 €, respectivamente. ¿Cuántos paquetes le conviene poner de cada tipo para obtener el máximo beneficio?",
+    "tag": ["Ejercicio de clase"],
+    "graphDomains": [100, 100],
+    "approach": {
+      "variables": [
+        "x = \\text{cantidad de paquetes del primer bloque}",
+        "y = \\text{cantidad de paquetes del segundo bloque}"
+      ],
+      "mainFunction": ["\\text{Objetivo: Maximizar}", "6.5x + 7y = \\text{Ganacia total}"],
+      "restrictions": [
+        "2x+3y \\le 600",
+        "x+y \\le 500",
+        "2x+y \\le 400",
+        "\\text{No Negatividad:}",
+        "x \\ge 0",
+        "y \\ge 0"
+      ]
     },
-    {
-        "question": "Una empresa decide, por el día del trabajador, llevar de paseo a la playa a 400 trabajadores (por lo menos). Para ello contrata a una compañía de transporte, la cual dispone de autobuses para 60 pasajeros y microbuses para 20 pasajeros. El precio de alquiler de cada autobús es de 250€ y de cada microbús de 200€. La compañía de transporte solo dispone ese día de 8 choferes profesionales. ¿Qué número de autobuses y microbuses deben contratarse para que el costo sea mínimo?",
-        "solution": {
-            "variables": [
-                "x = \\text{cantidad de autobuses}",
-                "y = \\text{cantidad de microbuses}"
-            ],
-            "mainFunction": ["\\text{Objetivo: Minimizar}", "250x + 200y = \\text{Gasto total}"],
-            "restrictions": [
-                "60x+20y \\ge 400 \\to \\text{pasajeros}",
-                "x+y \\le 8 \\to \\text{choferes}",
-                "\\text{No Negatividad:}",
-                "x \\ge 0",
-                "y \\ge 0"
-            ]
-        },
-        "result": "Se deben contratar 7 autobuses para que el costo sea mínimo, el costo total seria de 1,750"
+    "solution": {
+      "ecuations": ["y = 200-2x/3", "y = 500-x", "y = 400-2x"],
+      "procedure": ["6.5(150) + 7(100) = 1,675"]
     },
-    {
-        "question": "Un comercio dispone de 60 unidades de un producto A por el que obtiene un beneficio por cada unidad que vende de 250 €. También dispone de 70 unidades de otro producto B por el que obtiene un beneficio por unidad vendida de 300 €. El comercio puede vender como máximo 100 unidades de sus productos. ¿ cuantas unidades del producto A y B el comercio debe vender para que su beneficio sea máximo",
-        "solution": {
-            "variables": [
-                "x = \\text{cantidad del producto A}",
-                "y = \\text{canridad del producto B}"
-            ],
-            "mainFunction": ["\\text{Objetivo: Maximizar}", "250x + 300y = \\text{Ganacia total}"],
-            "restrictions": [
-                "x \\le  60 \\to \\text{producto A}",
-                "y \\le  70 \\to \\text{producto B}",
-                "x+y \\le  100 \\to \\text{productos}",
-                "\\text{No Negatividad:}",
-                "x \\ge 0",
-                "y \\ge 0"
-            ]
-        },
-        "result": "El comercio debe vender 30 unidades del producto A y 70 unidades del producto B para maximizar su beneficio"
+    "result": "para obtener el máximo beneficio se deben de poner 150 paquetes del primer bloque y 100 del segundo, dando un beneficio de 1,675"
+  },
+  {
+    "question": "En una granja de pollos se da una dieta, para engordar, con una composición mínima de 15 unidades de una sustancia A y otras 15 de una sustancia B.\n\nEn el mercado solo se encuentran dos clases de compuestos: el tipo X con una composición de una unidad de A y 5 de B, y el otro tipo, Y, con una composición de cinco unidades de A y una de B. El precio del tipo X es de 10 euros y del tipo Y es de 30 €.",
+    "tag": ["Ejercicio de clase"],
+    "graphDomains": [20, 20],
+    "approach": {
+      "variables": [
+        "x = \\text{cantidad de compuesto tipo X}",
+        "y = \\text{cantidad de compuesto tipo Y}"
+      ],
+      "mainFunction": ["\\text{Objetivo: Minimizar}", "10x + 30y = \\text{Gasto total}"],
+      "restrictions": [
+        "x+5y \\ge 15",
+        "5x + y \\ge 15",
+        "\\text{No Negatividad:}",
+        "x \\ge 0",
+        "y \\ge 0"
+      ]
     },
-    {
-        "question": "Una empresa de consumo masivo desea programar sus campañas publicitarias, contando con un presupuesto para estos efectos de US$100.000. Para ello vamos a considerar que sólo existen 2 alternativas posibles para realizar publicidad: Radio o TV. Cada minuto de anuncio en Radio permite llegar a 10.000 potenciales clientes con un costo de US$300. Por otra parte cada minuto de anuncio en TV permite llegar a 400.000 potenciales clientes con un costo de US$5.000. La empresa desea alcanzar con sus campañas de publicidad al menos a 5.000.000 de potenciales clientes. Adicionalmente el Departamento de Marketing ha sugerido que por razones estratégicas es necesario realizar al menos 50 minutos de publicidad en Radio, sin embargo, el dinero que se destine a esa alternativa no puede ser superior al 30% del total del dinero utilizado. Determinar la política de publicidad de costo mínimo.",
-        "solution": {
-            "variables": [
-                "x = \\text{minutos de publicidad en radio}",
-                "y = \\text{minutos de publicidad en TV}"
-            ],
-            "mainFunction": ["\\text{Objetivo: Minimizar}", "300x + 5,000y = \\text{Gasto total}"],
-            "restrictions": [
-                "300x+5,000y \\le  100,000 \\to \\text{presupuesto}",
-                "10,000x+400,000y \\ge 5,000,000 \\to \\text{potenciales clientes}",
-                "x \\ge 50",
-                "300x \\le 30,000",
-                "\\text{No Negatividad:}",
-                "x \\ge 0",
-                "y \\ge 0"
-            ]
-        },
-        "result": ""
-    }
+    "solution": {
+      "ecuations": ["y = 3-x/5", "y = 15-5x"],
+      "procedure": ["10(2.5) + 30(2.5) = 100"]
+    },
+    "result": "Para cumplir con una composición mínima de 15 unidades de una sustancia A y otras 15 de una sustancia B y a su vez minizar el gasto se debe de comprar 2.5 de cada compuesto (X y Y), gastando solo 100 euros"
+  },
+  {
+    "question": "Unos grandes almacenes desean liquidar 200 camisas y 100 pantalones de la temporada anterior. Para ello lanzan, dos ofertas, A y B. La oferta A consiste en un lote de una camisa y un pantalón, que se venden a 30 €; la oferta B consiste en un lote de tres camisas y un pantalón, que se vende a 50 €. No se desea ofrecer menos de 20 lotes de la oferta A ni menos de 10 de la B. ¿Cuántos lotes ha de vender de cada tipo para maximizar la ganancia?",
+    "graphDomains": [100, 100],
+    "approach": {
+      "variables": [
+        "x = \\text{cantidad de lotes de la oferta A}",
+        "y = \\text{cantidad de lotes de la oferta B}"
+      ],
+      "mainFunction": ["\\text{Objetivo: Maximizar}", "30x + 50y = \\text{Ganacia total}"],
+      "restrictions": [
+        "x+3y \\le 200 \\to \\text{(camisas)}",
+        "x+y \\le 100 \\to \\text{(pantalones)}",
+        "x \\ge 20",
+        "y \\ge 10",
+        "\\text{No Negatividad:}",
+        "x \\ge 0",
+        "y \\ge 0"
+      ]
+    },
+    "solution": {
+      "ecuations": ["y = 200/3-x/3", "y = 100-x"],
+      "procedure": ["30(50) + 50(50) = 4,000"]
+    },
+    "result": "Para maximizar la ganancia se tiene que vender 50 lotes de la oferta A y 50 lotes de la oferta B, dando una ganancia de 4,000"
+  },
+  {
+    "question": "Una compañía produce dos tipos de calculadora, el modelo C1 y el modelo C2. El tiempo de fabricación de las calculadoras es de 1 hora para el modelo C1 y de 4 horas para el modelo C2. El costo de fabricación del modelo C1 es de 30€ y el costo del modelo C2 es de 20€. La compañía dispone de 1600 horas para fabricar las calculadoras y de 18000€ para gastos viables. La ganancia en cada calculadora del modelo C1 es de 10€ y la ganancia para el modelo C2 es de 8€. ¿Cuál debe ser el plan de producción para garantizar la máxima ganancia?",
+    "graphDomains": [600, 1000],
+    "approach": {
+      "variables": [
+        "x = \\text{cantidad calculadoras del modelo} C_{1}",
+        "y = \\text{cantidad calculadoras del modelo} C_{2}"
+      ],
+      "mainFunction": ["\\text{Objetivo: Maximizar}", "10x + 8y = \\text{Ganacia total}"],
+      "restrictions": [
+        "x+4y \\le 1600 \\to \\text{(horas)}",
+        "30x+20y \\le 18,000\\to \\text{(coste de fabricacion)}",
+        "\\text{No Negatividad:}",
+        "x \\ge 0",
+        "y \\ge 0"
+      ]
+    },
+    "solution": {
+      "ecuations": ["400-x/4", "1800/2-3x/2"],
+      "procedure": ["10(400) + 8(300) = 2800"]
+    },
+    "result": "El plan de producción para garantizar la máxima ganancia es hacer 400 calculadoras del modelo C1 y 300 del modelo C2, dando una ganancia de 2800"
+  },
+  {
+    "question": "Un empresario desea vender 400 mesas y 200 sillas. Se ofrecen dos promociones, 1 y 2. La promoción 1 consiste en 1 mesa y en 1 silla, que se venden a 60€; la promoción 2 consiste en 3 mesas y en 1 silla, que se venden a 100€. No se desea ofrecer menos de 40 promociones de la oferta 1 ni menos de 20 promociones de la oferta 2. ¿Cuántas unidades debe producir la empresa para maximizar las ventas?",
+    "graphDomains": [250, 250],
+    "approach": {
+      "variables": [
+        "x = \\text{cantidad promociones tipo 1}",
+        "y = \\text{cantidad promociones tipo 2}"
+      ],
+      "mainFunction": ["\\text{Objetivo: Maximizar}", "60x + 100y = \\text{Ganacia total}"],
+      "restrictions": [
+        "x+3y \\le 400 \\to \\text{Mesas}",
+        "x+y \\le 200 \\to \\text{sillas}",
+        "x \\ge 40",
+        "y \\ge 20",
+        "\\text{No Negatividad:}",
+        "x \\ge 0",
+        "y \\ge 0"
+      ]
+    },
+    "solution": {
+      "ecuations": ["400/3-x/3", "200-x", "y=20", "500x-20000"],
+      "procedure": ["60(100) + 100(100) = 16000"]
+    },
+    "result": "para maximizar las ventas se deben de hacer 100 promociones de la oferta 1 y 100 de la oferta 2, dando una ganancia de 16000"
+  },
+  {
+    "question": "Una empresa decide, por el día del trabajador, llevar de paseo a la playa a 400 trabajadores (por lo menos). Para ello contrata a una compañía de transporte, la cual dispone de autobuses para 60 pasajeros y microbuses para 20 pasajeros. El precio de alquiler de cada autobús es de 250€ y de cada microbús de 200€. La compañía de transporte solo dispone ese día de 8 choferes profesionales. ¿Qué número de autobuses y microbuses deben contratarse para que el costo sea mínimo?",
+    "graphDomains": [100, 100],
+    "approach": {
+      "variables": ["x = \\text{cantidad de autobuses}", "y = \\text{cantidad de microbuses}"],
+      "mainFunction": ["\\text{Objetivo: Minimizar}", "250x + 200y = \\text{Gasto total}"],
+      "restrictions": [
+        "60x+20y \\ge 400 \\to \\text{pasajeros}",
+        "x+y \\le 8 \\to \\text{choferes}",
+        "\\text{No Negatividad:}",
+        "x \\ge 0",
+        "y \\ge 0"
+      ]
+    },
+    "solution": {
+      "ecuations": ["20-3x", "8-x"],
+      "procedure": ["250(7) + 200(0) = 1,750"]
+    },
+    "result": "Se deben contratar 7 autobuses para que el costo sea mínimo, el costo total seria de 1,750"
+  },
+  {
+    "question": "Un comercio dispone de 60 unidades de un producto A por el que obtiene un beneficio por cada unidad que vende de 250 €. También dispone de 70 unidades de otro producto B por el que obtiene un beneficio por unidad vendida de 300 €. El comercio puede vender como máximo 100 unidades de sus productos. ¿ cuantas unidades del producto A y B el comercio debe vender para que su beneficio sea máximo",
+    "graphDomains": [100, 100],
+    "approach": {
+      "variables": ["x = \\text{cantidad del producto A}", "y = \\text{canridad del producto B}"],
+      "mainFunction": ["\\text{Objetivo: Maximizar}", "250x + 300y = \\text{Ganacia total}"],
+      "restrictions": [
+        "x \\le  60 \\to \\text{producto A}",
+        "y \\le  70 \\to \\text{producto B}",
+        "x+y \\le  100 \\to \\text{productos}",
+        "\\text{No Negatividad:}",
+        "x \\ge 0",
+        "y \\ge 0"
+      ]
+    },
+    "solution": {
+      "ecuations": ["100-x", "y=70", "500x-30000"],
+      "procedure": ["250(30) + 30(70) = 9,600"]
+    },
+    "result": "El comercio debe vender 30 unidades del producto A y 70 unidades del producto B para maximizar su beneficio, el cual seria de 9,600"
+  },
+  {
+    "question": "Una empresa de consumo masivo desea programar sus campañas publicitarias, contando con un presupuesto para estos efectos de US$100.000. Para ello vamos a considerar que sólo existen 2 alternativas posibles para realizar publicidad: Radio o TV. Cada minuto de anuncio en Radio permite llegar a 10.000 potenciales clientes con un costo de US$300. Por otra parte cada minuto de anuncio en TV permite llegar a 400.000 potenciales clientes con un costo de US$5.000. La empresa desea alcanzar con sus campañas de publicidad al menos a 5.000.000 de potenciales clientes. Adicionalmente el Departamento de Marketing ha sugerido que por razones estratégicas es necesario realizar al menos 50 minutos de publicidad en Radio, sin embargo, el dinero que se destine a esa alternativa no puede ser superior al 30% del total del dinero utilizado. Determinar la política de publicidad de costo mínimo.",
+    "graphDomains": [100, 100],
+    "approach": {
+      "variables": [
+        "x = \\text{minutos de publicidad en radio}",
+        "y = \\text{minutos de publicidad en TV}"
+      ],
+      "mainFunction": ["\\text{Objetivo: Minimizar}", "300x + 5,000y = \\text{Gasto total}"],
+      "restrictions": [
+        "300x+5,000y \\le  100,000 \\to \\text{presupuesto}",
+        "10,000x+400,000y \\ge 5,000,000 \\to \\text{potenciales clientes}",
+        "x \\ge 50",
+        "300x \\le 30,000",
+        "\\text{No Negatividad:}",
+        "x \\ge 0",
+        "y \\ge 0"
+      ]
+    },
+    "solution": {
+      "ecuations": ["20-0.06x", "12.5-0.025x", "500x-50000", "500x-25000"],
+      "procedure": ["300(50) + 5,000(11.25) = 71,250"]
+    },
+    "result": "Para Minimizar el costo de publicidad la empresa debe de invertir 50 minutos en radio y 11.25 minutos en TV, dando un costo total de 71,250"
+  }
 ]
