@@ -1,79 +1,110 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 :root {
-    --background: #161616;
-    --foreground: #ededed;
-    --highlight: #93c5fd;
-    --link: #93c5fd;
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --background: #161616;
-        --foreground: #ededed;
-        --highlight: #93c5fd;
-    }
+  --background: #161616;
+  --foreground: #ededed;
+  --highlight: #93c5fd;
+  --link: #93c5fd;
+  --color: {
+    color: var(--foreground);
+  }
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 body {
-    color: var(--foreground);
-    background: var(--background);
+  color: var(--foreground);
+  background: var(--background);
 }
 
 nav {
-    position: sticky;
-    top: 0;
-    padding: 10px;
-    background-color: var(--background);
-    z-index: 1000;
+  position: sticky;
+  top: 0;
+  padding: 10px;
+  background-color: var(--background);
+  z-index: 1000;
 }
 
 /* Ancho del scroll */
 ::-webkit-scrollbar {
-    width: 4px;
+  width: 4px;
 }
 
 /* Color del fondo de la barra */
 ::-webkit-scrollbar-track {
-    background: transparent;
+  background: transparent;
 }
 
 /* Color y forma del "pulgar" de la barra */
 ::-webkit-scrollbar-thumb {
-    @apply bg-gray-600;
+  @apply bg-gray-600;
 }
 
 /* Cambiar color cuando se pasa el mouse */
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--foreground);
+  background: var(--foreground);
 }
 
 .highlight {
-    color: var(--highlight);
-    opacity: 1;
+  color: var(--highlight);
+  opacity: 1;
 }
 
 /*---------------- function plot ------------------*/
 
 .origin {
-    stroke: white;
+  stroke: white;
 }
 
 .x.axis .domain,
 .x.axis .tick line {
-    stroke: var(--background);
+  stroke: var(--background);
 }
 
 .y.axis .domain,
 .y.axis .tick line {
-    stroke: var(--background);
+  stroke: var(--background);
 }
 
 .top-right-legend {
-    opacity: 0;
+  opacity: 0;
+}
+
+.prose h1 {
+  color: var(--foreground);
+  font-weight: 700;
+}
+
+.prose h2 {
+  color: var(--foreground);
+  border-bottom: 1px solid var(--foreground);
+  border-opacity: 0.9;
+}
+
+.prose strong {
+  color: var(--highlight);
+}
+
+.prose p {
+  color: var(--foreground);
+}
+
+.prose li {
+  color: var(--foreground);
+}
+
+.prose a {
+  color: var(--link);
+  text-decoration: underline;
+}
+
+.prose ol {
+  margin-left: 1.5rem;
+}
+
+.prose li::marker {
+  color: var(--foreground);
+  font-weight: 700;
 }
