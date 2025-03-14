@@ -51,7 +51,7 @@ export default function Plot(props: Props) {
       } catch (e) {
         console.error("Error al renderizar la gráfica:", e);
         setError("Error al cargar el gráfico");
-      } 
+      }
     }
   }, [dimensions, props.ecuations, props.ydomain, props.xdomain]);
   if (error) {
@@ -62,8 +62,12 @@ export default function Plot(props: Props) {
     );
   }
   return (
-    <div ref={containerRef} className="flex justify-center w-3/4 mx-auto my-10">
+    <div ref={containerRef} className="flex-col justify-center w-3/4 mx-auto my-10">
       <div ref={plotRef}></div>
+      <div className="flex pt-2 text-sm text-wrap text-center lg:text-lg">
+        <p className="highlight">Nota:</p>
+        <p>En caso de que la grafica no sea visible el plano se puede alejar.</p>
+      </div>
     </div>
   );
 }

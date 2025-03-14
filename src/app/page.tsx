@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import TopicCard from "@/components/TopicCard";
+import TopicCard from "@/components/cards/TopicCard";
 import { Topic } from "@/models/Topic";
 import Markdown from "@/components/contentComponents/Markdown";
 
@@ -34,7 +34,7 @@ export default function Home() {
     fetchData();
   }, []);
 
-  const markdownElements = markdownContent.split("\n\n");
+  const markdownElements = markdownContent.split("\r\n\r\n");
 
   return (
     <>

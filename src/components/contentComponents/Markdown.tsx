@@ -6,7 +6,7 @@ type Props = {
 
 export default function Markdown(props: Props) {
   return (
-    <div className="prose   px-10 max-w-full m-auto my-12 lg:w-4/5">
+    <div className="prose py-4 max-w-full">
       <MarkdownLibrary>{props.children}</MarkdownLibrary>
     </div>
   );

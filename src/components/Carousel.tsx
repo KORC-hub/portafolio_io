@@ -39,8 +39,8 @@ export default function Carousel({ problems }: Props) {
   };
 
   return (
-    <div>
-      <div className="flex xl:mx-10">
+    <>
+      <div className="flex py-10">
         <div className="invisible w-0 flex justify-center items-center xl:visible xl:w-auto">
           <button className=" h-full m-4 p-4 text-6xl hover:text-blue-400" onClick={previous}>
             {"<"}
@@ -61,6 +61,6 @@ export default function Carousel({ problems }: Props) {
           {">"}
         </button>
       </div>
-    </div>
+    </>
   );
 }

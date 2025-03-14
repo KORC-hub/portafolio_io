@@ -21,7 +21,7 @@ export default function TopicCard({ title, explain, link }: Props) {
                         className="mt-1 inline-flex items-center border-transparent underline hover:text-blue-300"
                         href={link}
                     >
-                        Read More {">"}
+                        Leer Más {">"}
                     </Link>
                 </div>
             </div>
