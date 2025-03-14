@@ -1,14 +1,14 @@
 [
   {
     "id": 1,
-    "title": "Programacion lineal",
-    "explain": "Introduccion y generacion de modelos matematicos para la resolucion de problemas",
+    "title": "Programacion lineal y Solucion Grafica",
+    "explain": "Introduccion y planteamiento de modelos matematicos para la resolucion de problemas y su respectiva solucion grafica.",
     "link": "unit1/lineal-programming"
   },
   {
     "id": 2,
-    "title": "Variables de holgura",
-    "explain": "Solución de un problema de programación lineal por el método algebraico. Mediante el uso de variables de holgura.",
+    "title": "Metodo Simplex paso a paso",
+    "explain": "Solución paso a paso de un problema de programación lineal por el algoritmo Simplex. Mediante el uso de variables de holgura y artificiales.",
     "link": "unit1/slack-variables"
   }
 ]
