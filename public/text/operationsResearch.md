@@ -6,13 +6,13 @@ Esta disciplina, también conocida como Investigación Operativa o en inglés Op
 
 ## Metodología de la investigación de operaciones
 
-El enfoque de la Investigación de Operaciones es el **modelaje**, el proceso asociado al modelaje es el siguiente:
+El enfoque de la Investigación de Operaciones es el **modelaje**, el proceso asociado al modelaje es el siguiente:
 
-1. Definición del problema: Como en casi todo proceso esta etapa es la mas importante, la calidad del modelo dependera en gran parte de que tan asertada sea nuestra definicion del problema.
+1. Definición del problema: Como en casi todo proceso esta etapa es la más importante, la calidad del modelo dependerá en gran parte de que tan acertada sea nuestra definición del problema.
 
-2. Construcción de un modelo: Se busca que el modelo sea lo mas cercano al problema real que se desea representar pero que al mismo tiempo sea simple de modo que se pueda resolver utilizando algun algoritmo, lograr esto puede ser imposible por lo que puede llegar a existir mas de un modelo.
+2. Construcción de un modelo: Se busca que el modelo sea lo más cercano al problema real que se desea representar pero que al mismo tiempo sea simple de modo que se pueda resolver utilizando algún algoritmo, lograr esto puede ser imposible por lo que puede llegar a existir más de un modelo.
 
-3. Solución del modelo: Una vez construido el modelo se puede utilizar programas computacionales que utilizan algoritmos, por ejemplo en problemas de **Programacion Lineal** se puede utilizar el **Metodo simplex**.
+3. Solución del modelo: Una vez construido el modelo se puede utilizar programas computacionales que utilizan algoritmos, por ejemplo en problemas de **Programación Lineal** se puede utilizar el **Metodo simplex**.
 
 4. Validación: Se verifica que la solución alcanzada cumpla con las restricciones planteadas en el problema.
 

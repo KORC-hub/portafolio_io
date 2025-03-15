@@ -1,4 +1,16 @@
-**Paso 1**: Preparamos ecuaciones
+# Método Simplex
+
+Es un **procedimiento iterativo** para resolver problemas de programación lineal, donde **se busca obtener la solución óptima** de la función objetivo que logre cumplir el conjunto de restricciones.
+
+Fue desarrollado en el año 1947 por el matemático norteamericano **George Dantzig**, el cual tambien es conocido como el padre de la programación lineal.
+
+El algoritmo del método símplex fue elegido como **uno de los 10 algoritmos más importantes del siglo XX**.
+
+# Ejercicio:
+
+---
+
+**Paso 1**: Pasando las inecuaciones a ecuaciones teniendo en cuenta lo siguiente:
 
 Para cada restricción:
 
@@ -16,10 +28,12 @@ Para Minimizar:
   Para Maximizar:
 
 Para Maximizar:
+
 - Valor -M para cada variable artificial ( -MAn )
 
 En ambos:
-- Valor +0 por cada variable holgura ( +0Sn )
+
+- Valor +0S por cada variable holgura ( +0Sn )
 
 ---
 
@@ -28,7 +42,7 @@ En ambos:
 - Variables básicas: son las que tienen valores => 0
 - R: recursos especificados en cada restricción
 - Cj: coeficientes de la función objetivo
-- Zj: sumatoria de Cj \* aij
+- Zj: sumatoria de $Cj \* aij$
 - Criterio simple: Cj - Zj determina cuando se termina el algoritmo
 
 ---
@@ -62,8 +76,4 @@ En ambos:
 - Minimizar = Cj - Zj => 0
   Si hay números negativos - Aplicamos de nuevo el paso 4, 5 y 6
 
-Estos pasos (4, 5, 6) se repiten hasta que el paso 7 (criterio simplex) se cumpla.
-
----
-
-
+Estos pasos (4, 5, 6 y 7) se repiten hasta que el paso 7 (criterio simplex) se cumpla.
