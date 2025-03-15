@@ -28,7 +28,7 @@ export default function RootLayout({
       <body>
         <nav className="py-3 px-4 flex items-center justify-between mb-10 border-b-2 border-white">
           <Link className="text-xl tracking-tight" href="/">
-            Blog - Kevin Rogers
+            Portafolio IO - Kevin Rogers C.
           </Link>
           <div className="flex items-center gap-10">
             {navLinks.map((link) => {
