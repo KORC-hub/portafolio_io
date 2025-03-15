@@ -6,7 +6,7 @@ type Props = {
 
 export default function TipCard(props: Props) {
   return (
-    <div className="flex items-center bg-blue-950 text-white p-4 my-5 rounded-md border-l-4 border-blue-800">
+    <div className="flex items-center bg-neutral-800 text-white p-4 my-5 rounded-md border-l-4 border-blue-400">
       <div>
         <Markdown>{props.children}</Markdown>
       </div>

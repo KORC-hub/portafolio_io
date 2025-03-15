@@ -14,8 +14,11 @@ Para Minimizar:
 
 - Valor +M por cada variable artificial ( +MAn )
   Para Maximizar:
+
+Para Maximizar:
 - Valor -M para cada variable artificial ( -MAn )
-  En ambos:
+
+En ambos:
 - Valor +0 por cada variable holgura ( +0Sn )
 
 ---
@@ -60,3 +63,7 @@ Para Minimizar:
   Si hay números negativos - Aplicamos de nuevo el paso 4, 5 y 6
 
 Estos pasos (4, 5, 6) se repiten hasta que el paso 7 (criterio simplex) se cumpla.
+
+---
+
+
