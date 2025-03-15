@@ -4,7 +4,7 @@ La investigación de operaciones es una vasta rama de las matemáticas que abarc
 
 Esta disciplina, también conocida como Investigación Operativa o en inglés Operations Research (OR), consiste en la aplicación de **métodos analíticos avanzados** para apoyar el proceso de **toma de decisiones**. Utiliza técnicas de modelamiento matemático, análisis estadístico y optimización matemática para alcanzar soluciones óptimas o cercanas a ellas, especialmente cuando se enfrentan problemas de **decisión complejos**, siendo de gran utilidad en la **gestión de las organizaciones.**
 
-## Metodología de la investigación de operaciones
+## 📋 Metodología de la investigación de operaciones
 
 El enfoque de la Investigación de Operaciones es el **modelaje**, el proceso asociado al modelaje es el siguiente:
 

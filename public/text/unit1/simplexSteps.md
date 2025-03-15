@@ -8,6 +8,8 @@ El algoritmo del método símplex fue elegido como **uno de los 10 algoritmos m�
 
 # Ejercicio:
 
+Como vimos en la [sección anterior](https://portafolio-io-weld.vercel.app/unit1/lineal-programming), apartir de un problema se plantea una funcion objetivo y sus restricciones
+
 ---
 
 **Paso 1**: Pasando las inecuaciones a ecuaciones teniendo en cuenta lo siguiente:

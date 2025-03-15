@@ -37,7 +37,7 @@ Las **restricciones** Son condiciones que limitan los valores que pueden tomar l
 
 Estas restricciones se expresan mediante ecuaciones o inecuaciones lineales que las variables de decisión deben satisfacer para que la solución sea viable.
 
-# Resolución de problemas dos variable por el método gráfico
+# Resolución de problemas de dos variable por el método gráfico
 
 El método gráfico es una forma visual de resolver sistemas de ecuaciones lineales. Este método es especialmente útil para sistemas de dos variables, ya que permite visualizar las soluciones en un plano cartesiano.
 
