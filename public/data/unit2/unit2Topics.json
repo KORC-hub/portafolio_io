@@ -1,1 +1,14 @@
-[{}]
+[
+  {
+    "id": 3,
+    "title": "Aplicacion de Solver",
+    "explain": "Planteamiento y resolución de un problema de programación lineal utilizando el método Simplex con la herramienta Solver de Excel.",
+    "link": "unit2/solver"
+  },
+  {
+    "id": 4,
+    "title": "Análisis de Sensibilidad ",
+    "explain": "Análisis del Informe de Sensibilidad en Solver: comprensión de precios sombra y rangos de variación en restricciones.",
+    "link": "unit2/sensitivity-report"
+  }
+]
