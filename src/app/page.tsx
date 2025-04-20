@@ -35,20 +35,11 @@ export default function Home() {
     fetchData();
   }, []);
 
-  const markdownElements = markdownContent.split("\n\n");
+  const markdownElements = markdownContent.split("---");
 
   return (
     <>
       <Markdown>{markdownElements[0]}</Markdown>
-      <Markdown>{markdownElements[1]}</Markdown>
-      <Markdown>{markdownElements[2]}</Markdown>
-      <Markdown>{markdownElements[3]}</Markdown>
-      <Markdown>{markdownElements[4]}</Markdown>
-      <Markdown>{markdownElements[5]}</Markdown>
-      <Markdown>{markdownElements[6]}</Markdown>
-      <Markdown>{markdownElements[7]}</Markdown>
-      <Markdown>{markdownElements[8]}</Markdown>
-      <Markdown>{markdownElements[9]}</Markdown>
       <Image
         className="m-auto"
         src="/image/operationResearchSteps.png"
