@@ -41,6 +41,8 @@ Estas restricciones se expresan mediante ecuaciones o inecuaciones lineales que 
 
 El método gráfico es una forma visual de resolver sistemas de ecuaciones lineales. Este método es especialmente útil para sistemas de dos variables, ya que permite visualizar las soluciones en un plano cartesiano.
 
+---
+
 Para solucionar un problema hay que seguir los siguientes pasos:
 
 1. Definir las variables, la función objetivo y las restricciones.
