@@ -1,8 +1,5 @@
 "use client";
-
-import Image from "next/image";
 import { useState, useEffect } from "react";
-import TipCard from "@/components/cards/tipCard";
 import Markdown from "@/components/contentComponents/Markdown";
 
 export default function SlackVariables() {
