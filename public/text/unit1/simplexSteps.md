@@ -41,7 +41,7 @@ En ambos:
 
 **Paso 3**: Tabulación inicial de la información
 
-- Variables básicas: son las que tienen valores => 0
+- Variables básicas: son las que tienen valores >= 0
 - R: recursos especificados en cada restricción
 - Cj: coeficientes de la función objetivo
 - Zj: sumatoria de $Cj \* aij$
@@ -75,7 +75,7 @@ En ambos:
 - Maximizar = Cj - Zj <= 0
   Si hay números positivos - Aplicamos de nuevo el paso 4, 5 y 6
 
-- Minimizar = Cj - Zj => 0
+- Minimizar = Cj - Zj >= 0
   Si hay números negativos - Aplicamos de nuevo el paso 4, 5 y 6
 
 Estos pasos (4, 5, 6 y 7) se repiten hasta que el paso 7 (criterio simplex) se cumpla.
