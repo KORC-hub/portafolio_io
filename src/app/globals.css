@@ -80,7 +80,11 @@ nav {
 .prose h2 {
   color: var(--foreground);
   border-bottom: 1px solid var(--foreground);
-  border-opacity: 0.9;
+}
+
+.prose h3 {
+  color: var(--foreground);
+  border-bottom: 0px solid var(--foreground);
 }
 
 .prose strong {
