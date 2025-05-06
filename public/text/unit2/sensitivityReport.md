@@ -2,7 +2,7 @@
 
 ## 📋 Introducción
 
-La Programación Lineal es una herramienta clave para optimizar funciones objetivo (m aximizar ganancias, minimizar costos) bajo restricciones lineales. El Análisis de Sensibilidad estudia la estabilidad de la solución frente a variaciones en los parámetros del modelo, especialmente en los recursos asignados en el lado derecho de las restricciones.
+El Análisis de Sensibilidad estudia la estabilidad de la solución frente a variaciones en los parámetros del modelo, especialmente en los recursos asignados en el lado derecho de las restricciones.
 
 ---
 
