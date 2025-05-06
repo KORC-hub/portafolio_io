@@ -41,3 +41,15 @@ Conocer la solución óptima es útil, pero tambien es valioso saber cómo reacc
 ---
 
 El precio sombra indica cuánto cambiaría la ganancia total si aumentamos en una unidad el lado derecho de una restricción
+
+Por ejemplo:
+
+- La restricción de madera tiene un precio sombra de 2.5, lo que significa que si se tuviera una unidad adicional de madera, la ganancia aumentaría en 2.5 dólares, hasta un máximo de 133.33 unidades más.
+
+- La restricción de sillas tiene un precio sombra de 13, por lo tanto, si fuera posible producir una silla adicional (es decir, aumentar ese límite de 120 a 121), la ganancia crecería en 13 dólares, hasta un máximo de 22 unidades más.
+
+Por otro lado, la restricción de trabajo tiene un precio sombra de 0, lo que indica que aumentar o reducir el trabajo disponible no tiene impacto en la ganancia, dentro del rango permitido (de 510 hasta 610 unidades de trabajo).
+
+---
+
+¿Conviene conseguir más madera si eso implica un costo adicional?
