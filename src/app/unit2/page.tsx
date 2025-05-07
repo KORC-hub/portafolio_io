@@ -26,13 +26,20 @@ export default function SlackVariables() {
   }, []);
 
   const markdownElements = markdownContent.split("---");
-  console.log(markdownElements)
+  console.log(markdownElements);
 
   return (
     <div className="mb-20">
       <Markdown>{markdownElements[0]}</Markdown>
       <TipCard>{markdownElements[1]}</TipCard>
       <Markdown>{markdownElements[2]}</Markdown>
+      <Image
+        className="m-auto"
+        src="/image/SolverSolution/solver.png"
+        width={500}
+        height={500}
+        alt="Tabla 1"
+      />
       <Markdown>{markdownElements[3]}</Markdown>
       <div className="flex justify-between items-start gap-x-8">
         <div className="w-1/2 text-sm">
@@ -61,6 +68,9 @@ export default function SlackVariables() {
           alt="Tabla 1"
         />
       </div>
+      <Markdown>
+        {"Si graficamos las restricciones podemos ver como influye cada una de estas."}
+      </Markdown>
       <Image
         className="m-auto"
         src="/image/SolverSolution/grafico.png"
@@ -70,6 +80,13 @@ export default function SlackVariables() {
       />
       <Markdown>{markdownElements[7]}</Markdown>
       <Markdown>{markdownElements[8]}</Markdown>
+      <Image
+        className="m-auto mb-10"
+        src="/image/SolverSolution/report.png"
+        width={500}
+        height={500}
+        alt="Tabla 1"
+      />
       <Image
         className="m-auto"
         src="/image/SolverSolution/sensitivityReport.png"
@@ -81,20 +98,20 @@ export default function SlackVariables() {
       <div className="ml-10">
         <Markdown>{markdownElements[10]}</Markdown>
         <Image
-        className="m-auto"
-        src="/image/SolverSolution/graficoModificado.png"
-        width={700}
-        height={700}
-        alt="Tabla 1"
-      />
+          className="m-auto"
+          src="/image/SolverSolution/graficoModificado.png"
+          width={700}
+          height={700}
+          alt="Tabla 1"
+        />
         <Markdown>{markdownElements[11]}</Markdown>
         <Image
-        className="m-auto"
-        src="/image/SolverSolution/graficoModificado2.png"
-        width={700}
-        height={700}
-        alt="Tabla 1"
-      />
+          className="m-auto"
+          src="/image/SolverSolution/graficoModificado2.png"
+          width={700}
+          height={700}
+          alt="Tabla 1"
+        />
       </div>
       <Markdown>{markdownElements[12]}</Markdown>
     </div>
