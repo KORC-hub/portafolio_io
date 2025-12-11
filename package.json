@@ -12,7 +12,7 @@
     "@tailwindcss/postcss": "^4.0.12",
     "function-plot": "1.25.1",
     "katex": "0.16.21",
-    "next": "15.1.7",
+    "next": "15.1.9",
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "react-markdown": "9.0.3"
